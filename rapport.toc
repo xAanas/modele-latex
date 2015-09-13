@@ -35,7 +35,11 @@
 \contentsline {section}{\numberline {3}Raffinement des diagrammes des cas d'utilisations}{18}{section.3.3}
 \contentsline {subsection}{\numberline {3.1}module gestion de demande}{18}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.2}module gestion des utilisateurs}{18}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3}Module gestion des param\`etres de la demandes.}{18}{subsection.3.3.3}
-\contentsline {chapter}{Conclusion G\'en\'erale et Perspectives}{25}{chapter*.24}
-\contentsline {chapter}{Bibliographique}{26}{chapter*.24}
-\contentsline {chapter}{Annexe : Remarques Diverses}{27}{chapter*.25}
+\contentsline {subsection}{\numberline {3.3}Module gestion des param\`etres de la demandes.}{19}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.4}Module exportation des donn\'ees}{19}{subsection.3.3.4}
+\contentsline {section}{\numberline {4}Diagrammes structurels}{21}{section.3.4}
+\contentsline {subsection}{\numberline {4.1}Diagramme de paquetages}{21}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {4.2}Diagramme de classes}{22}{subsection.3.4.2}
+\contentsline {chapter}{Conclusion G\'en\'erale et Perspectives}{31}{chapter*.31}
+\contentsline {chapter}{Bibliographique}{32}{chapter*.31}
+\contentsline {chapter}{Annexe : Remarques Diverses}{33}{chapter*.32}

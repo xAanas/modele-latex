@@ -114,7 +114,7 @@ Acteur		&   Collaborateur FR.   \\
                                               \item Le système affiche les messages d'erreur devant les champs concernés.
                                               \item Nous reprenons depuis l'étape 3.
                                             \end{itemize}
-                                                                  
+
   \\
 			\hline
 	\end{tabular}
@@ -175,7 +175,7 @@ Le figure \ref{useCaseUser} illustre le diagramme de cas d'utilisation de gestio
 \begin{itemize}
   \item Description du cas d'utilisation : ajout d'un utilisateur \\
   Ce cas est décrit par le tableau \ref{addUserTab}.
-  
+
 \begin{table}[!ht]
   \centering
   \begin{tabular}{|l|p{10cm}|}
@@ -208,7 +208,7 @@ Le figure \ref{useCaseUser} illustre le diagramme de cas d'utilisation de gestio
   \end{tabular}
   \caption{Ajout d'un utilisateur}\label{addUserTab}
 \end{table}
-  
+
 \end{itemize}
 
 \subsection{Module gestion des paramètres de la demandes.}
@@ -224,10 +224,10 @@ La figure \ref{useCaseParametre} montre ces différents cas d'activités.
 \begin{itemize}
   \item Description du cas d'utilisation : ajout d'un nouveau site \\
   Ce cas d'utilisation est décrit par le tableau \ref{AjoutSitTab}.
-  
-\begin{table}
-  \centering[!ht]
-  \begin{tabular}{|p{4}|p{9}|}
+
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|p{4cm}|p{9cm}|}
     \hline
     % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
     Titre & Ajout d'un nouveau site. \\
@@ -254,7 +254,7 @@ La figure \ref{useCaseParametre} montre ces différents cas d'activités.
                           \end{enumerate}
      \\
     \hline
-    Scénario d”exception & Le collaborateur ne trouve pas de client disponible : 
+    Scénario d'exception & Le collaborateur ne trouve pas de client disponible :
     \begin{itemize}
       \item Le système affiche l'erreur indiquant l'absence des client.
       \item Le collaborateur doit ajouter un nouveau client.
@@ -275,7 +275,7 @@ Vue la nature des autres activités de l'entreprise, nous aurons besoins aussi d'
 La figure \ref{useCaseExporter} met en évidence ces cas d'utilisation.
 
 \begin{figure}[!ht]\centering
-\includegraphics[scale=0.8]{ExportDonnéesFinal.png}
+\includegraphics[scale=0.6]{ExportDonnéesFinal1.png}
 \caption{Diagramme de cas d'utilisation exportation des données}
 \label{useCaseExporter}
 \end{figure}
@@ -283,7 +283,7 @@ La figure \ref{useCaseExporter} met en évidence ces cas d'utilisation.
 \begin{itemize}
   \item Description du cas d'utilisation : exporter la liste des demandes.\\
   Le tableau \ref{expListTab} décrit ce cas d'utilisation .
-  
+
 \begin{table}[!ht]
   \centering
   \begin{tabular}{|l|p{11cm}|}
@@ -313,8 +313,104 @@ Après la présentation des différents diagrammes de cas d'utilisation, nous détai
 
 \section{Diagrammes structurels}
 \subsection{Diagramme de paquetages}
-Pour une application maintenable, nous avons opté pour la division en packages. Le package est un regroupement de classe ou d’éléments de modélisation de préférence de même type. Donc ce diagramme met en évidence l’organisation de notre travail \cite{Package}.
-La figure 3.7 présente le diagramme de packetages.
+Pour une application maintenable, nous avons opté pour la division en packages. Le package est un regroupement de classe ou d'éléments de modélisation de préférence de même type. Donc ce diagramme met en évidence l'organisation de notre travail \cite{Package}.
+La figure \ref{paquetageDiagram} présente le diagramme de packetages.
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.7]{paquetageFinal.png}
+\caption{Diagramme de paquetage}
+\label{paquetageDiagram}
+\end{figure}
+
+En fait, ce diagramme met en évidence le modèle Model View Controller (MVC) \cite{MVC}, à travers les packages Views, Controller, Repository, Manager et Entity.
+Entity : il regroupe les entités de notre application.
+Manager : il regroupe les éléments gérant la persistance dans la base de données.
+Repository : il regroupe les éléments responsable de l'extraction des données de la base de données.
+Views : il regroupe les vues de notre application. Il représente le contacte directe avec l'utilisateur.
+Controller : il regroupe les contrôleurs de l'application. Ils jouent le rôle de chef d'orchestre en appellant le modèle et en le redirigent vers la vue convenue.
+Il existe aussi d'autre packages :
+Service : il regroupe les services liés à notre application.
+Form : il regroupe les formulaires de l'application modélisés par des classes.
+Config : il contient le routage de l'application et les services.
+
+\subsection{Diagramme de classes}
+\begin{itemize}
+  \item Le modèle du domaine.\\
+  La figure \ref{ModlDmnClass} illustre le modèle du domaine de l'application web avec les différentes dépendances.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.6]{diagrammeClasses.png}
+\caption{Le modèle du domaine}
+\label{ModlDmnClass}
+\end{figure}
+
+Ce sont les différentes entités qui constituent le modèle du domaines.
+Elles représentent la façon avec laquelle les données sont stockés dans la base.	
+Dans le tableau 3.6, nous représentons le rôle de chacune de ces entités.
+ 
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|l|p{11cm}|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Entité & Description \\
+    \hline
+    Utilisateur & Elle représente un collaborateur chez l'entreprise, elle contient les informations de chacun d'eux et précise leur rôle dans l'entreprise. \\
+    \hline
+    Demande & Cette entité représente les exigences du client transmises par nos collaborateurs en France. Les exigences sont prédéfinies et représentées par les missions.  \\
+    \hline
+    Commentaire & Ce sont les différents impressions, interrogations, ou déclarations que laissent les utilisateurs à propos d'une demande. Ils peuvent être accompagnés par des photos. \\
+    \hline
+    Fichier & Il peut être un fichier attaché à une demande, une image dans commentaire ou l'image d'un utilisateur. \\
+    \hline
+    Notification & C'est un signal envoyé au utilisateur pour leur notifier d'un nouvel événement. \\
+    \hline
+    Jaime & Ceux sont les impressions des collaborateurs à propos d'une demande. Soit ils l'aiment soit ils ne l'aiment pas. \\
+    \hline
+    Catégorie & La catégorie d'une demande sert dans la facturation. \\
+    \hline
+    Mission & C'est une tâche que nous pouvons effectuer dans notre entreprise. \\
+    \hline
+    Client & Elle représente nos clients. \\
+    \hline
+    Site & Elle représente où se situe le locale de l'entreprise avec laquelle nous traitons.  \\
+    \hline
+  \end{tabular}
+  \caption{Descriptif des entités de l'application}\label{entityTab}
+\end{table}
+
+ \item Diagramme de classe des contrôleurs.\\
+ La figure \ref{ctrlClass} montre le diagramme de classe des contrôleurs.
+ 
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.5]{controlerClass.png}
+\caption{Le modèle du domaine}
+\label{ctrlClass}
+\end{figure} 
+
+ Les contrôleurs sont invoqués selon les routes, chaque route pointe vers une seule méthode d’un contrôleur bien spécifique. Donc une seule route ne peut pas invoquer plusieurs actions simultanément.
+\end{itemize}
+
+\section{Diagramme comportementaux}
+\subsection{Diagrammes de séquences}
+\begin{itemize}
+  \item Diagramme de séquence du cas : ajouter une demande. \\
+  Dans la figure 4.10, nous présentons la création d’une demande à travers les principales interactions entre les différents éléments de l’application.
+L’exemple traité est le cas d’un collaborateur qui crée une demande avec des données correctes.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.5]{controlerClass.png}
+\caption{Le modèle du domaine}
+\label{ctrlClass}
+\end{figure} 
+  
+  
+  \item 
+\end{itemize}
+
 
 \section*{Conclusion}
 Voilà.

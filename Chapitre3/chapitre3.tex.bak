@@ -82,7 +82,7 @@ La création des demandes est conduite par les collaborateurs en France. Les coll
 \label{useCaseGestionDemande}
 \end{figure}
 \begin{itemize}
-  \item description du cas d'utilisation : ajout d'une demande \\
+  \item Description du cas d'utilisation : ajout d'une demande \\
   Le tableau 3. décrit le cas d'utilisation "ajout d'une demande".
 
 \begin{table}[!ht]
@@ -123,7 +123,7 @@ Acteur		&   Collaborateur FR.   \\
 \end{table}
 
 
-\item description du cas d'utilisation : commenter une demande\\
+\item Description du cas d'utilisation : commenter une demande\\
 Le cas d'utilisation "ajout d'un nouveau commentaire" est décrit dans le tableau \ref{ajtCommTab}.
 
 \begin{table}[!ht]
@@ -221,6 +221,100 @@ La figure \ref{useCaseParametre} montre ces différents cas d'activités.
 \label{useCaseParametre}
 \end{figure}
 
+\begin{itemize}
+  \item Description du cas d'utilisation : ajout d'un nouveau site \\
+  Ce cas d'utilisation est décrit par le tableau \ref{AjoutSitTab}.
+  
+\begin{table}
+  \centering[!ht]
+  \begin{tabular}{|p{4}|p{9}|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Titre & Ajout d'un nouveau site. \\
+    \hline
+    Acteur & Collaborateur. \\
+    \hline
+    Description & La plupart des clients sont de grande entreprise donc ils possèdent plusieurs sites et à chaque fois nous travaillons sur l'un d'eux. C'est la raison pour laquelle l'affectation du client seulement n'est pas suffisante. Nous devons donc, dans chaque demande, préciser le site sur lequel nous travaillons. \\
+    \hline
+    Pré condition & Le collaborateur doit être authentifié. \\
+    \hline
+    Scénario principal & \begin{enumerate}
+                           \item Le collaborateur se rend sur la page des sites.
+                           \item Le collaborateur affiche le pop-up de l'ajout d'un site.
+                           \item Le collaborateur indique le client.
+                           \item Le collaborateur saisi les informations du site.
+                           \item Le système enregistre le nouveau site.
+                         \end{enumerate}
+     \\
+    \hline
+    Scénario alternatif & \begin{enumerate}
+                            \item Le collaborateur saisi les informations d'une nouvelle demande.
+                            \item Le collaborateur ne trouve pas le site voulu.
+                            \item Nous reprenons dès l'étape 2 du scénario principal.
+                          \end{enumerate}
+     \\
+    \hline
+    Scénario d”exception & Le collaborateur ne trouve pas de client disponible : 
+    \begin{itemize}
+      \item Le système affiche l'erreur indiquant l'absence des client.
+      \item Le collaborateur doit ajouter un nouveau client.
+      \item Le scénario reprend depuis l'étape 1.
+    \end{itemize}
+     \\
+    \hline
+  \end{tabular}
+  \caption{Ajout d'un nouveau site}\label{AjoutSitTab}
+\end{table}
+\end{itemize}
+
+\subsection{Module exportation des données}
+Ce module permet en fait plusieurs types d'exportation.
+Tout d'abord, il permet l'extraction de la demande sous sa forme originale adaptée avant le développement de notre application (comme indiqué dans l'annexe 1).
+Pour le suivi du travail ou un contrôle quotidien, nous pouvons exporter les données dans des fichiers Excel.
+Vue la nature des autres activités de l'entreprise, nous aurons besoins aussi d'autre types de flux d'information i.e. JSON et XML.
+La figure \ref{useCaseExporter} met en évidence ces cas d'utilisation.
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.8]{ExportDonnéesFinal.png}
+\caption{Diagramme de cas d'utilisation exportation des données}
+\label{useCaseExporter}
+\end{figure}
+
+\begin{itemize}
+  \item Description du cas d'utilisation : exporter la liste des demandes.\\
+  Le tableau \ref{expListTab} décrit ce cas d'utilisation .
+  
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|l|p{11cm}|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Titre & Exporter la liste des demandes. \\
+    \hline
+    Acteur & Administrateur. \\
+    \hline
+    Description & Afin de faire le suivi du travail dans l'entreprise, ou de facturer le travail effectué par l'équipe, le directeur a besoin d'une vue globale sur les demandes. \\
+    \hline
+    Pré condition & Un administrateur est authentifié. \\
+    \hline
+    Scénario principal & \begin{enumerate}
+                           \item L'administrateur se rend sur la page d'administration.
+                           \item L'administrateur affiche les demandes.
+                           \item L'administration choisit le type de flux de sortie.
+                           \item L'administrateur exporte les données.
+                         \end{enumerate}
+     \\
+    \hline
+  \end{tabular}
+  \caption{Exporter la liste des demandes}\label{expListTab}
+\end{table}
+Après la présentation des différents diagrammes de cas d'utilisation, nous détaillons dans la section suivante, la conception de notre application à travers les diagrammes structurels et comportementaux.
+\end{itemize}
+
+\section{Diagrammes structurels}
+\subsection{Diagramme de paquetages}
+Pour une application maintenable, nous avons opté pour la division en packages. Le package est un regroupement de classe ou d’éléments de modélisation de préférence de même type. Donc ce diagramme met en évidence l’organisation de notre travail \cite{Package}.
+La figure 3.7 présente le diagramme de packetages.
 
 \section*{Conclusion}
 Voilà.
