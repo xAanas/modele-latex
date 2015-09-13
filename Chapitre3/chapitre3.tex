@@ -1,0 +1,323 @@
+
+\setcounter{chapter}{2}
+\chapter{Etude conceptuelle}
+\minitoc %insert la minitoc
+\graphicspath{{Chapitre3/figures/}}
+
+%\DoPToC
+%==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries\rightmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
+
+\begin{spacing}{1.2}
+
+%==============================================================================
+\section*{Introduction}
+phrase introductive
+
+\section{Architecture physique}
+Notre application est une application client/serveur qui dispose d'une architecture 3 tiers. C'est l'architecture la plus répandue dans les application web, dans laquelle la logique métier, l'accès et le stockage de données et l'interface utilisateur sont maintenus chacune dans un module indépendant et pouvant être répartis sur des plates-formes différentes ou même regroupés sur une seule machine. La figure \ref{archiTier} donne un aperçu sur cette architecture.
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.5]{archiTier.jpg}
+\caption{Architecture physique}
+\label{archiTier}
+\end{figure}
+
+\begin{itemize}
+  \item Le client : ou la partie présentation qui est dans notre cas le navigateur web (google Chrome, Mozilla Firefox etc).
+  \item Le serveur d'application : ou la partie métier, elle est chargée de faire des traitements spécifiques afin de répondre au requête HTTP du client venant de la couche présentation.
+  \item Le serveur de base de données : dans notre cas c'est le système de gestion de base de données MySQL.
+\end{itemize}
+
+
+
+
+
+\section{Architecture logicielle}
+Maintenant, nous présentons l'architecture applicative de notre application, sa structure en couche et leur description, à savoir, la couche présentation, la couche service et la couche accès à la base de données. Nous modélisons par la figure \ref{archiAppl} ces couches ainsi que les différents invocations entre eux.
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=1]{archiApplicative.png}
+\caption{Architecture applicative de la solution}
+\label{archiAppl}
+\end{figure}
+
+\begin{itemize}
+  \item La couche présentation : elle représente le contact de l'utilisateur avec l'application, elle lui permet le pilotage et la configuration de l'application. Elle invoque le service métier adéquat à la requête du client et lui retourne le résultat. Cette couche est composée de :
+      \begin{itemize}
+        \item Contrôleur frontal : il représente le point d'entrée de notre application.
+        \item Contrôleurs : ils décident selon la requête du client et les configuration du système, quel service sera invoqué et quelle vue sera rendu, autrement dit, ils orchestrent les différents éléments.
+        \item Vues : le résultat de la requête de l'utilisateur est récupéré et traduit en HTML et Javascript puis renvoyé au client sous forme de vue selon la charte graphique utilisée dans l'application.
+      \end{itemize}
+  \item La couche métier : c'est l'élément qui englobe la logique métier et ses traitements spécifiques. Elle est invoquée via les contrôleurs pour traiter les requêtes client.
+  \item La couche accès au base de données : cette couche assure la communication avec la source de données afin d'assurer la séparation entre la logique métier et la logique accès au données.
+	  Elle est composée de :
+        \begin{itemize}
+          \item Managers : Ils assurent la persistance des données dans la base de données.
+          \item Repositories : Ils assurent l'extraction des données de la base de données.
+          \item Database Abstract Layer DBAL : Elle offre un accès facile et rapide à la base de données [W5]. Elle procure plusieurs service  : l'insertion, la mise à jour, la suppresion et la lecture des données.
+Elle est caractérisée par un Object Relation Mapping (ORM) qui traduit  les tables de la base en objets facilement manipulable.
+        \end{itemize}
+\end{itemize}
+Dans les paragraphes précédents, nous avons présenté les modèles architecturals de notre application ce qui nous ménera à la partie conception dans la quelle nous allons détailler nos diagrammes de cas d'utilisation, présenter les diagrammes de classes ainsi que quelques exemple des cas d'activité les plus importants.
+
+
+
+\section{Raffinement des diagrammes des cas d'utilisations}
+Dans cette partie, nous décortiquons les cas d'utilisation vus dans le chapitre précédent d'une façon plus détaillée afin de clarifier le fonctionnement de notre système.
+\subsection{module gestion de demande}
+Ce module regroupe toutes les rubriques de gestion d'une demande.
+La création des demandes est conduite par les collaborateurs en France. Les collaborateurs à Tunis auront une visibilité sur les détails du travail à faire ainsi que sur les interactions qu'ils peuvent effectuer avec la demande. La figure \ref{useCaseGestionDemande} montre le diagramme de cas d'utilisation de gestion d'une demande.
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.5]{demandeGestionFinal.png}
+\caption{Diagramme de cas d'utilisation Gestion d'une demande}
+\label{useCaseGestionDemande}
+\end{figure}
+\begin{itemize}
+  \item Description du cas d'utilisation : ajout d'une demande \\
+  Le tableau 3. décrit le cas d'utilisation "ajout d'une demande".
+
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{|l|p{11cm}|}	
+			\hline
+			Titre 		&	Ajouter une nouvelle demande.	\\
+\hline			
+Acteur		&   Collaborateur FR.   \\
+\hline		
+	Résumé		&	Le collaborateur peut ajouter une nouvelle demande en spécifiant les différentes informations relatives à son exécution, e.g. date limite, client, format du rendu. \\
+\hline
+			Pré condition		&	Le collaborateur doit être authentifié. \\
+\hline		
+	Scénario principal	 	& \begin{enumerate}
+                            \item Le collaborateur se rend dans la page d'accueil ou sur la page de la  liste des demandes.
+                            \item Le collaborateur affiche le pop-up du formulaire de la demande.
+                            \item Le collaborateur saisie les informations nécessaires et appuie sur créer.
+                            \item Le collaborateur joint les fichiers sur lesquels les collaborateur à Tunis vont travailler.
+                            \item Le système enregistre la demande.
+                            \item Le système émet une notification à tous les utilisateurs pour les informer de la nouvelle demande.
+                            \item Le système envoie un mail à tout les utilisateurs pour les informer de la nouvelle demande.
+                            \item Le système affiche un message de confirmation et le redirige vers la page d'accueil ou sur la page de la liste des demandes.
+                            \end{enumerate}
+  \\
+\hline		
+	Scénario d'exception		&	Erreur dans les informations saisies :
+                                            \begin{itemize}
+                                              \item Le système affiche les messages d'erreur devant les champs concernés.
+                                              \item Nous reprenons depuis l'étape 3.
+                                            \end{itemize}
+                                                                  
+  \\
+			\hline
+	\end{tabular}
+	\label{ajoutDemande}
+	\caption{Ajout d'une demande}
+\end{table}
+
+
+\item Description du cas d'utilisation : commenter une demande\\
+Le cas d'utilisation "ajout d'un nouveau commentaire" est décrit dans le tableau \ref{ajtCommTab}.
+
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|l|p{10cm}|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Titre & Commenter une demande. \\
+    \hline
+    Acteur  & Collaborateur TN. \\
+    \hline
+    Résumé & Afin d'intervenir dans le cycle de vie d'une demande ou de poser son point de vue, un collaborateur peut ajouter un commentaire tout en joignant des images. \\
+    \hline
+    Pré condition & Le collaborateur doit être authentifié. \\
+    \hline
+    Scénario principal & \begin{enumerate}
+                           \item Le collaborateur se rend dans la file d'actualité ou dans la vue d'une demande.
+                           \item Le collaborateur saisie son commentaire.
+                           \item Le collaborateur joint les images.
+                           \item Le système enregistre le commentaire.
+                           \item Le système affiche le nouveau commentaire.
+                           \item Le système place le collaborateur dans l'espace de commentaire afin qu'il puisse ajouter un autre.
+                         \end{enumerate}
+     \\
+    \hline
+    Scénario d'exception & Erreur dans le type des fichiers joint :
+                                \begin{itemize}
+                                  \item le système affiche l'impossibilité de charger ce type de fichier ( fichier.php ) .
+                                  \item on se rend depuis l'étape 4.
+                                \end{itemize}
+                                 \\
+    \hline
+  \end{tabular}
+  \caption{Ajouter un nouveau commentaire}\label{ajtCommTab}
+\end{table}
+
+\end{itemize}
+
+\subsection{module gestion des utilisateurs}
+Ce sont les différentes fonctionnalités offertes afin de gérer les collaborateurs au sein de l'application.
+Le figure \ref{useCaseUser} illustre le diagramme de cas d'utilisation de gestion des utilisateurs.
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.5]{utilisateurGestionFinal.png}
+\caption{Diagramme de cas d'utilisation gestion utilisateurs}
+\label{useCaseUser}
+\end{figure}
+
+\begin{itemize}
+  \item Description du cas d'utilisation : ajout d'un utilisateur \\
+  Ce cas est décrit par le tableau \ref{addUserTab}.
+  
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|l|p{10cm}|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Titre & Ajout d'un utilisateur. \\
+    \hline
+    Acteur & Administrateur , Collaborateur. \\
+    \hline
+    Résumé & Ce cas permet à l'administrateur de bien organiser les utilisateurs de l'application en leur affectant les différents rôles. En fait, chaque rôle permet à son utilisateur des accès spécifiques et limités. \\
+    \hline
+    Pré condition & Un administrateur est authentifié. \\
+    \hline
+    Scénario principal & \begin{enumerate}
+                           \item L'administrateur envoie la vue d'enregistrement à un collaborateur.
+                           \item Le collaborateur saisi ses informations.
+                           \item Le système enregistre ces informations.
+                           \item Le système met à jour la liste des collaborateurs.
+                           \item L'administrateur affecte les rôles de ce collaborateur et l'active pour qu'il puisse accéder à l'application.
+                         \end{enumerate}
+     \\
+    \hline
+    Scénario d'exception & L'utilisateur essaie de s'inscrire avec une adresse mail existante :
+                        \begin{itemize}
+                          \item Le système affiche l'erreur près du champs concerné.
+                          \item Le processus reprend depuis l'étape 2.
+                        \end{itemize}
+                         \\
+    \hline
+  \end{tabular}
+  \caption{Ajout d'un utilisateur}\label{addUserTab}
+\end{table}
+  
+\end{itemize}
+
+\subsection{Module gestion des paramètres de la demandes.}
+Cette partie regroupe les différentes fonctionnalités qui servent à paramétrer les demandes. Vue que les missions effectuées dans l'entreprise sont connues d'avance, c'est le directeur de l'entreprise qui est chargé de les prédéfinir. Les clients et leurs sites sont définis au préalable comme ils peuvent être définis lors de la soumission d'une nouvelle demande.
+La figure \ref{useCaseParametre} montre ces différents cas d'activités.
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=1]{GestionParametreFinal.png}
+\caption{Diagramme d'utilisation du paramétrage d'une demande}
+\label{useCaseParametre}
+\end{figure}
+
+\begin{itemize}
+  \item Description du cas d'utilisation : ajout d'un nouveau site \\
+  Ce cas d'utilisation est décrit par le tableau \ref{AjoutSitTab}.
+  
+\begin{table}
+  \centering[!ht]
+  \begin{tabular}{|p{4}|p{9}|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Titre & Ajout d'un nouveau site. \\
+    \hline
+    Acteur & Collaborateur. \\
+    \hline
+    Description & La plupart des clients sont de grande entreprise donc ils possèdent plusieurs sites et à chaque fois nous travaillons sur l'un d'eux. C'est la raison pour laquelle l'affectation du client seulement n'est pas suffisante. Nous devons donc, dans chaque demande, préciser le site sur lequel nous travaillons. \\
+    \hline
+    Pré condition & Le collaborateur doit être authentifié. \\
+    \hline
+    Scénario principal & \begin{enumerate}
+                           \item Le collaborateur se rend sur la page des sites.
+                           \item Le collaborateur affiche le pop-up de l'ajout d'un site.
+                           \item Le collaborateur indique le client.
+                           \item Le collaborateur saisi les informations du site.
+                           \item Le système enregistre le nouveau site.
+                         \end{enumerate}
+     \\
+    \hline
+    Scénario alternatif & \begin{enumerate}
+                            \item Le collaborateur saisi les informations d'une nouvelle demande.
+                            \item Le collaborateur ne trouve pas le site voulu.
+                            \item Nous reprenons dès l'étape 2 du scénario principal.
+                          \end{enumerate}
+     \\
+    \hline
+    Scénario d”exception & Le collaborateur ne trouve pas de client disponible : 
+    \begin{itemize}
+      \item Le système affiche l'erreur indiquant l'absence des client.
+      \item Le collaborateur doit ajouter un nouveau client.
+      \item Le scénario reprend depuis l'étape 1.
+    \end{itemize}
+     \\
+    \hline
+  \end{tabular}
+  \caption{Ajout d'un nouveau site}\label{AjoutSitTab}
+\end{table}
+\end{itemize}
+
+\subsection{Module exportation des données}
+Ce module permet en fait plusieurs types d'exportation.
+Tout d'abord, il permet l'extraction de la demande sous sa forme originale adaptée avant le développement de notre application (comme indiqué dans l'annexe 1).
+Pour le suivi du travail ou un contrôle quotidien, nous pouvons exporter les données dans des fichiers Excel.
+Vue la nature des autres activités de l'entreprise, nous aurons besoins aussi d'autre types de flux d'information i.e. JSON et XML.
+La figure \ref{useCaseExporter} met en évidence ces cas d'utilisation.
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.8]{ExportDonnéesFinal.png}
+\caption{Diagramme de cas d'utilisation exportation des données}
+\label{useCaseExporter}
+\end{figure}
+
+\begin{itemize}
+  \item Description du cas d'utilisation : exporter la liste des demandes.\\
+  Le tableau \ref{expListTab} décrit ce cas d'utilisation .
+  
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|l|p{11cm}|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Titre & Exporter la liste des demandes. \\
+    \hline
+    Acteur & Administrateur. \\
+    \hline
+    Description & Afin de faire le suivi du travail dans l'entreprise, ou de facturer le travail effectué par l'équipe, le directeur a besoin d'une vue globale sur les demandes. \\
+    \hline
+    Pré condition & Un administrateur est authentifié. \\
+    \hline
+    Scénario principal & \begin{enumerate}
+                           \item L'administrateur se rend sur la page d'administration.
+                           \item L'administrateur affiche les demandes.
+                           \item L'administration choisit le type de flux de sortie.
+                           \item L'administrateur exporte les données.
+                         \end{enumerate}
+     \\
+    \hline
+  \end{tabular}
+  \caption{Exporter la liste des demandes}\label{expListTab}
+\end{table}
+Après la présentation des différents diagrammes de cas d'utilisation, nous détaillons dans la section suivante, la conception de notre application à travers les diagrammes structurels et comportementaux.
+\end{itemize}
+
+\section{Diagrammes structurels}
+\subsection{Diagramme de paquetages}
+Pour une application maintenable, nous avons opté pour la division en packages. Le package est un regroupement de classe ou d’éléments de modélisation de préférence de même type. Donc ce diagramme met en évidence l’organisation de notre travail \cite{Package}.
+La figure 3.7 présente le diagramme de packetages.
+
+\section*{Conclusion}
+Voilà.
+
+%==============================================================================
+\end{spacing}

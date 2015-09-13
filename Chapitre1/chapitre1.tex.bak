@@ -1,0 +1,156 @@
+\setcounter{mtc}{5} %indique le numéro réel du chapitre, pour la mini table des matières
+\chapter{Cadre du projet}
+\minitoc  %insert la minitoc
+
+\graphicspath{{Chapitre1/figures/}}
+%==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries\rightmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
+
+\begin{spacing}{1.2}
+%==============================================================================
+
+\section*{Introduction}
+Une étude théorique \cite{YOUSFI2015} peut contenir l'une et/ou l'autre de ces deux parties :
+\section{Cadre du projet}
+C'est une étude assez détaillée sur ce qui existe sur le marché ou dans la littérature (d'où
+le terme état de l'art), qui permet de répondre à la problématique. L'idée ici est de faire
+un comparatif entre les solutions existantes, mais surtout d'analyser le résultat de cette
+comparaison et de dire pourquoi ne sont-elles pas satisfaisantes pour répondre à votre
+problématique.
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.9]{art.jpg}
+\caption{État de l'art}
+\label{fig:fig1}
+\end{figure}
+\subsection{Problématique}
+Aujourd'hui, nous avons de plus en plus de demandes à traiter, sans avoir un support informatique pour les gérer. Ce n'est pas très aisé de gérer l'historique de la clientéle d'une entreprise. De plus, lors des différentes intéractions avec la clientéle, et en particulier lors du partage d'informations, l'outils utilisé est le mail. Cependant, cela vire au désordre, i.e. messages dissparus, méthodes de classements qui différent d'un collaborateur à un autre, absence de suivi. Et comme la relation entre collaborateurs est la priorité stratégique de la société, ce point est à travailler d'urgence.
+
+\subsection{Solutions existantes}
+Il existe plusieurs solutions de gestion de relation client sur le marché. En examinant ces applications, nous citons les plus importantes :
+\subsubsection{Version éditeur}
+\begin{itemize}
+
+\item
+CRM de Fitnet Manager : Fitnet Avant-vente est l'outil de gestion commerciale de Fitnet Manager. Les solutions CRM et ERP existent côtes à côtes. Activées ensemble, elles fonctionnent de manière entièrement intégrée. Fitnet Manager couvre ainsi l'ensemble du cycle de vie de l'activité : depuis la prospection jusqu'à la facturation et l'analyse dans les reporting \cite{Fitnet}.
+
+  \item
+  Everwin CXM : c'est une solution qui vise les cabinets d'architectures, elle couvre plusieurs fonctionnalités citant à titre d'exemple :
+  \begin{itemize}
+    \item 
+    Base de données de la société et des contacts avec gestion automatisée de la téléprospection.
+    \item 
+    Gestion des actions commerciales et des campagnes marketing.
+    \item 
+    Agenda partagé et planning général des collaborateurs.
+  \end{itemize}
+   
+\end{itemize}
+Cette solution est fondée sur une technologie Client/Serveur sous windows avec une base de données SQL Server.
+il est disponible en mode SaaS ou licence et peut être couplé aux ERP ERPEverwin SX et Everwin GX \cite{Everwin} .   La figure \ref{everwinImg} illustre l'ensemble des fonctionnalités couvertes par Everwin CXM.
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.9]{everwinCXM.png}
+\caption{Fonctionnalités offertes par Everwin CXM \cite{Everwin} }
+\label{everwinImg}
+\end{figure}
+
+\subsubsection{Version libre}
+\begin{itemize}
+  \item Dolibar ERP/CRM : cette solution gère les activités professionnelles ou associatives de point de vue contact, commandes, stock. Elle gère aussi la gestion des projets et les avancements de leurs tâches, et assure même la gestion de la ressource humaine.
+	Dolibarr est disponible pour toute plate-forme puisqu'elle est développée en PHP, MySQL ou encore PostgreSQL .
+La figure \ref{dolibarr1Img} illustre l'architecture sur laquelle est basée la solution Dolibarr :
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.4]{Dolibarr1.png}
+\caption{architecture Dolibarr \cite{Dolibarr} }
+\label{dolibarr1Img}
+\end{figure}
+
+Pour les non connaisseurs dans le domaine du développement, il existe un auto-installateur qui se charge d'installer la solution avec tous ses pré-requis (apache,mysql,php) \cite{Dolibarr}.
+La figure \ref{dolibarr2Img} présente l'écran d'accueil de Dolibarr :
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.5]{accueil.png}
+\caption{Ecran d'accueil de Dolibarr \cite{Dolibarr} }
+\label{dolibarr2Img}
+\end{figure}
+
+\end{itemize}
+\subsubsection{Etude comparative}
+Le tableau \ref{compSolExt} présente un comparatif entre les solutions existantes présentées précédemment :
+
+\begin{table}[!ht]\centering
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Solution & Payante &  Commentaire & Alertes & Mails & Accueil simple \\
+    \hline
+    Fitnet & oui  & non & oui & oui & non \\
+    \hline
+    Everwin CXM & oui  & non & oui & oui & non \\
+    \hline
+    Dolibarr & non  & non & oui & oui & non \\
+    \hline
+  \end{tabular}
+  \caption{Comparatif entre les solutions existantes}\label{compSolExt}
+\end{table}
+
+Les applications étudiées, qu'elles soient en versions éditeurs ou même gratuites, et malgré leurs adaptabilités et la diversité de leurs fonctionnalités offertes, restes incapable de satisfaire les exigences de la société. En effet, elles n'intègrent pas un système de commentaire et leur manipulation reste plutôt complexe comparée à la solution à laquelle nous voulons aboutir.
+
+\subsection{Objectif du projet}
+Nous voulons offrir un meilleur service dans nos réponses aux collaborateurs à l'aide d'un véritable outil de gestion des demandes. Aujourd'hui nous visons de :
+\begin{itemize}
+  \item Faciliter la gestion des demandes.
+  \item Rendre l'interaction entre les collaborateurs situés en Tunisie et en France plus fluide.
+  \item Avoir un système de notification dans l'application, par mail et par sms.
+  \item Mesurer leur taux de satisfaction vis-à-vis des réponses aux demandes.
+  \item Identifier le dysfonctionnement dans notre processus de travail.
+  \item Avoir un suivi et une évaluation.
+\end{itemize}
+
+\subsection{Contexte méthodologique du projet}
+La grande évolution dans le domaine du développement est accompagnée par une évolution des moyens assurant le bon fonctionnement de ce dernier. D'où l'apparition des méthodes agiles permettant d'organiser le cycle de développement des projets informatiques.
+
+Les méthodes agiles sont basées sur des principes communs définis dans l'Agile Manifesto qui est rédigé par des experts dans ce domaine. Ils se reposent essentiellement sur une approche itérative incrémentale et adaptative évoluant en parallèle avec les besoins du client, afin de livrer un produit de qualité.
+Il existe plusieurs méthodes agiles, à savoir, la méthode  RUP \cite{RUP}, la méthode XP \cite{XP}, la méthode SCRUM \cite{SCRUM} et la méthode RAD \cite{RAD}.
+
+\subsubsection{Le choix de la Méthode Scrum}
+Dans la majorité des projets, il est difficile d'anticiper les attentes du client. Ceci nous oriente vers une approche itérative permettant de s'adapter aux exigences du client au fur et à mesure de l'avancement du projet. Pour ce faire, nous choisi d'adopter la méthode Scrum.
+Aujourd'hui, Scrum est la méthode agile la plus utilisée. Elle permet de produire une solution de la plus haute qualité dans des bref délais.
+Cette méthode est munie des atouts suivants :
+\begin{itemize}
+  \item Meilleur vue d'ensemble du projet : nous avons une vue globale sur l'avancement du projet par tous les membre des différentes équipes avec un traitement régulier des problèmes rencontrés durant chaque phase.
+  \item Mise à jour des priorités : le client, qui n'est pas nécessairement un informaticien, n'a pas toujours une vision complète sur le produit final. Pour cela, et grâce à la composition séquentielle du contenu des sprints, il bénéficie d'une flexibilité au niveau de la définition, de l'évolution des priorités et des séquences d'activités.
+  \item Qualité du produit mise en avant : Cette méthode se repose sur une évaluation régulière du travail, ce qui permet un meilleur traitement des problèmes (bug), une meilleure productivité et un produit satisfaisant \cite{AvantageScrum}.
+\end{itemize}
+
+\subsubsection{Les rôles et les notions}
+Les rôles dans Scrum :
+\begin{itemize}
+  \item Le product owner est le responsable du produit. Il est généralement le client et c'est lui qui exprime les différentes spécifications fonctionnelles et leurs priorités.
+  \item L'équipe de développement est responsable de la réalisation du livrable. Elle est constituée par l'entreprise et elle est auto-organisé.
+  \item Le scrum master est le premier responsable sur le bon déroulement des processus de la méthode scrum.
+\end{itemize}
+
+Notion :
+\begin{itemize}
+  \item Sprint  : une itération de travail qui dure entre 15 et 30 jours.
+  \item Le product backlog : représente la liste des fonctionnalités rédigées par le product owner avec tous les correctifs et les améliorations. Il est donc modifiable tout au long du projet. Le product backlog est présenté sous forme d'items.
+  \item Le sprint backlog : est l'ensemble des items planifiés pour le sprint en cour \cite{SCRUM}.
+\end{itemize}
+
+
+\section*{Conclusion}
+Dans ce chapitre, nous avons présenté le cadre général du travail, en commençant par la présentation de l'entreprise Ellouze and Partners, passant par la problématique du projet, ainsi qu'une étude des solutions existantes sur le marché. Et pour finir, nous avons présenté la méthode qui va guider notre travail tout au long du projet. Dans le chapitre suivant, nous introduisons les spécifications de notre projet.
+
+
+%==============================================================================
+\end{spacing}

@@ -1,0 +1,55 @@
+\begin{thebibliography}{10}
+
+\bibitem{Everwin}
+\url{http://www.everwin.fr/solutions}.
+\newblock [En ligne; consulté le 21-Juin-2015].
+
+\bibitem{Dolibarr}
+\url{http://www.dolibarr.fr/}.
+\newblock [En ligne; consulté le 22-Juin-2015].
+
+\bibitem{SFAXI2015}
+{\sc Lilia Sfaxi and Souheib Yousfi}.
+\newblock {\em Pour bien écrire un rapport}.
+\newblock Département Math-info  (2015).
+
+\bibitem{Latex}
+{\sc Mr. Latex}.
+\newblock {Débuter avec Latex}.
+\newblock \url{www.latex.com},  (2008).
+\newblock [En ligne; consulté le 19-Juillet-2008].
+
+\bibitem{YOUSFI2015}
+{\sc Souheib Yousfi and Lilia Sfaxi}.
+\newblock {\em Rapport Latex}.
+\newblock Département Math-info  (2015).
+
+\bibitem{Fitnet}
+\url{http://www.fitnetmanager.com/crm-avant-vente}.
+\newblock [En ligne; consulté le 21-Juin-2015].
+
+\bibitem{RUP}
+{\sc Phillipe Kruchten}.
+\newblock {\em The Rational Unified Process : An Introduction}.
+\newblock  (publié le 10 Décembre 2003).
+
+\bibitem{XP}
+{\sc Kent Beck}.
+\newblock {\em Extreme Programming Explained: Embrace change}.
+\newblock  (publié le 26 novembre 2014).
+
+\bibitem{SCRUM}
+{\sc Souheib Yousfi and Lilia Sfaxi}.
+\newblock {\em Rapport Latex}.
+\newblock Département Math-info  (2015).
+
+\bibitem{RAD}
+{\sc Ken~Schwaber et~Jeff~Sutherland}.
+\newblock {\em Le Guide SCRUM}.
+\newblock  (publié en juillet 2013).
+
+\bibitem{AvantageScrum}
+\url{https://stefanini.com/FR/2014/03/les_avantages_de_la_methode_scrum/,}.
+\newblock [En ligne; consulté le 24-Juin-2015].
+
+\end{thebibliography}

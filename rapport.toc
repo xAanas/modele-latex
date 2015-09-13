@@ -1,0 +1,41 @@
+\select@language {french}
+\contentsline {chapter}{Liste des Figures}{iv}{Doc-Start}
+\contentsline {xchapter}{}{iv}{Doc-Start}
+\contentsline {chapter}{Liste des Tableaux}{v}{Doc-Start}
+\contentsline {xchapter}{}{v}{Doc-Start}
+\contentsline {chapter}{R\'esum\'e}{vi}{Doc-Start}
+\contentsline {chapter}{Abstract}{vii}{Doc-Start}
+\contentsline {chapter}{Introduction G\'en\'erale}{1}{Doc-Start}
+\contentsline {chapter}{\numberline {I}Cadre du projet}{2}{chapter.1}
+\contentsline {section}{\numberline {1}Cadre du projet}{2}{section.1.1}
+\contentsline {section}{\numberline {2}Probl\'ematique}{2}{section.1.2}
+\contentsline {section}{\numberline {3}Solutions existantes}{3}{section.1.3}
+\contentsline {subsection}{\numberline {3.1}Version \'editeur}{3}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {3.2}Version libre}{4}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {3.3}Etude comparative}{4}{subsection.1.3.3}
+\contentsline {section}{\numberline {4}Objectif du projet}{6}{section.1.4}
+\contentsline {section}{\numberline {5}Contexte m\'ethodologique du projet}{6}{section.1.5}
+\contentsline {subsection}{\numberline {5.1}Le choix de la M\'ethode Scrum}{6}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {5.2}Les r\^oles et les notions}{7}{subsection.1.5.2}
+\contentsline {chapter}{\numberline {II}Capture,analyse et sp\'ecification des besoins}{8}{chapter.2}
+\contentsline {section}{\numberline {1}\'Etude de l'existant}{8}{section.2.1}
+\contentsline {section}{\numberline {2}Critique de l'existant }{9}{section.2.2}
+\contentsline {section}{\numberline {3}Analyse des besoins}{9}{section.2.3}
+\contentsline {subsection}{\numberline {3.1}Les acteurs}{9}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {3.2}Les besoins fonctionnels}{9}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {3.3}Les besoins non fonctionnels}{10}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {3.4}Planification du projet}{10}{subsection.2.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Acteurs du projet}{10}{subsubsection.2.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Backlog produit}{10}{subsubsection.2.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Les sprints du projet}{11}{subsubsection.2.3.4.3}
+\contentsline {subsection}{\numberline {3.5}Sp\'ecification des besoins diagramme de cas d'utilisation global}{11}{subsection.2.3.5}
+\contentsline {chapter}{\numberline {III}Etude conceptuelle}{15}{chapter.3}
+\contentsline {section}{\numberline {1}Architecture physique}{15}{section.3.1}
+\contentsline {section}{\numberline {2}Architecture logicielle}{16}{section.3.2}
+\contentsline {section}{\numberline {3}Raffinement des diagrammes des cas d'utilisations}{18}{section.3.3}
+\contentsline {subsection}{\numberline {3.1}module gestion de demande}{18}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.2}module gestion des utilisateurs}{18}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3}Module gestion des param\`etres de la demandes.}{18}{subsection.3.3.3}
+\contentsline {chapter}{Conclusion G\'en\'erale et Perspectives}{25}{chapter*.24}
+\contentsline {chapter}{Bibliographique}{26}{chapter*.24}
+\contentsline {chapter}{Annexe : Remarques Diverses}{27}{chapter*.25}

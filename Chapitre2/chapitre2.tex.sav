@@ -1,0 +1,238 @@
+
+\setcounter{chapter}{1}
+\chapter{Capture,analyse et spécification des besoins}
+\minitoc %insert la minitoc
+\graphicspath{{Chapitre2/figures/}}
+
+%\DoPToC
+
+%==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries\rightmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
+
+\begin{spacing}{1.2}
+%==============================================================================
+\section*{Introduction}
+Ce chapitre représente la case de départ dans notre travail. En effet, nous analysons et spécifions les besoins du projet. Ensuite, nous identifions les différents acteurs. Et enfin, nous modélisons le tout dans un diagramme de cas d'utilisation général qui sera notre file conducteur durant la prochaine phase.
+
+\section{Étude de l'existant}
+	Pour soumettre une demande, nos collaborateurs chez Génie des Lieux (GDL) à Paris ont quelques étape à suivre :
+\begin{itemize}
+  \item Téléchargement des fichiers.
+Le téléchargement des fichiers Autocad avec extension DWG ou les fichiers 3DS sur lesquels nos collaborateurs à EllouzeAndPartners à Tunis vont travailler. Ce téléchargement s'effectue sur notre plate-forme privée qui nous génère automatiquement un lien pour le téléchargement de ces fichiers ce qui nous mène à l'étape suivante.
+  \item Soumission du formulaire de demande.
+Ensuite, les collaborateurs chez GDL remplissent un formulaire Excel pour détailler les missions à traiter dans cette demande. Les liens de téléchargement des fichiers téléchargés sont soumis dans ce formulaire. Ce dernier est soumis via un mail.
+  \item Réponse des collaborateurs à tunis
+L'équipe d'EllouzeAndPartners répond à cette demande par un autre formulaire Excel prédéfini.
+  \item Le suivi de la demande.
+Ca se fait à travers l'Email, Skype ou par téléphone.
+\end{itemize}
+
+\section{Critique de l'existant }
+Il faut Bien choisir les diagrammes adéquats pour votre application. En général, les
+diagrammes obligatoires sont les diagrammes de cas d'utilisation, de classe et de
+séquence. Vous pouvez ajouter en plus le diagramme qui vous semble pertinent :
+par exemple, pour une application sur plusieurs tiers, il est intéressant de
+montrer le diagramme de déploiement;
+
+
+
+
+\section{Analyse des besoins}
+Dans cette section, nous introduisons les différents acteurs ainsi que les besoins fonctionnels et non fonctionnels.
+
+\subsection{Les acteurs}
+\begin{itemize}
+  \item L'administrateur : c'est la personne chargée d'affecter les différents rôles et de gérer les comptes.
+  \item Collaborateur-FR : ils envoient les demandes depuis la France.
+  \item Collaborateur-TN : ils assurent la réponse aux demandes.
+\end{itemize}
+
+\subsection{Les besoins fonctionnels}
+\begin{itemize}
+  \item La gestion des utilisateurs: l'administrateur doit disposer d'une interface permettant la gestion des utilisateurs, ainsi que la recherche et la gestion des rôles. En cas d'oubli, les utilisateurs peuvent changer leur mot de passe à travers leur adresse mail.
+  \item La gestion des demandes: l'application doit permettre la création d'une demande, modifier ses données, la gestion de ses différentes phases ainsi que la recherche selon un ou plusieurs critères.
+  \item La gestion des tâches : l'application doit permettre la gestion complète des tâches à faire dans chaque demande, i.e., la création, la modification et la suppression.
+  \item La gestion des clients : l'application doit permettre l'ajout des clients,leur modification et leur suppression.
+  \item La gestion des sites : l'application doit permettre l'ajout des sites relatifs à chaque client ainsi que leur modification et suppression.
+  \item Extraction des données : toutes listes d'utilisateurs, clients, sites, demandes, tâches peuvent être extraite sous forme de fichier Excel, la demande est extraite sous la forme originale du formulaire utilisé auparavant par l'équipe en France.
+  \item L'envoie des notifications : l'application envoie automatiquement des notifications aux utilisateurs à chaque évènement important comme l'ajout ou la modification d'une demande ou l'ajout d'un nouveau commentaire.
+\end{itemize}
+
+\subsection{Les besoins non fonctionnels}
+des notifications aux utilisateurs à chaque évènement important comme l'ajout ou la modification d'une demande ou l'ajout d'un nouveau commentaire.
+
+\subsection{Planification du projet}
+\subsubsection{Acteurs du projet}
+Dans le tableau \ref{ActScrum} nous présentons les différents acteurs participants dans ce projet :
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|l|l|l|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Rôle & Acteur & Mission \\
+    \hline
+    Équipe & Anas BEN HAJ ALI & Conception,développement, tests unitaires, déploiement. \\
+    \hline
+    SCRUM master & Ons BEN CHEIKH & Assurer le bon déroulement de la méthode SCRUM. \\
+    \hline
+    Product owner & Aymen ELLOUZE & Définir les fonctionnalités du produit et s'assurer de leur conformités. \\
+    \hline
+  \end{tabular}
+  \caption{Les acteurs du SCRUM }\label{ActScrum}
+\end{table}
+
+\subsubsection{Backlog produit}
+Il est élaboré par le product owner. Il comporte toutes les fonctionnalités du produit à développer par l'équipe de travail. Il est utilisé essentiellement pour planifier les releases. A la fin de chaque sprint, nous effectuons une mise à jour du backlog afin de prendre en compte les nouveaux besoins qui surviennent durant les sprints, et annuler les idées non concluantes du départ \cite{SCRUM}.
+Dans le tableau \ref{backlogP}, nous présentons le Backlog établi au début du projet.
+\begin{table}[!ht]
+  \centering
+  \begin{tabular}{|l|l|c|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Nom & Description & Effort \\
+    \hline
+    Ajouter une mission & L'administrateur peut ajouter une mission. & 2 \\
+    \hline
+    Modifier une mission & L'administrateur peut modifier une mission. & 3 \\
+    \hline
+    Rechercher d'une mission & L'administrateur peut rechercher une mission par son titre. & 2 \\
+    \hline
+    Exporter les missions & L'administrateur peut exporter la liste des missions sous plusieurs formats. & 2 \\
+    \hline
+    Ajouter un client & Le collaborateur peut ajouter un client. & 2 \\
+    \hline
+    Modifier un client & Le collaborateur peut modifier un client. & 3 \\
+    \hline
+    Rechercher un client & L'administrateur peut rechercher un client. & 2 \\
+    \hline
+    Exporter les clients & L'administrateur peut exporter la liste des client sous plusieurs formats. & 2 \\
+    \hline
+    Affecter un site au client & Le collaborateur peut affecter un site au client. & 3 \\
+    \hline
+    Modifier un site & Le collaborateur peut modifier un site. & 3 \\
+    \hline
+    Rechercher un site & L'administrateur peut filtrer les sites. & 2 \\
+    \hline
+    Exporter les sites & L'administrateur peut exporter la liste des sites sous plusieurs formats. & 2 \\
+    \hline
+    Ajouter une catégorie & L'administrateur peut peut ajouter une catégorie de demande. & 2 \\
+    \hline
+    Modifier une catégorie & L'administrateur peut modifier une catégorie & 3 \\
+    \hline
+    Rechercher une catégorie & L'administrateur peut rechercher une catégorie. & 2 \\
+    \hline
+    Exporter les catégories & L'administrateur peut exporter la liste des catégories sous plusieurs formats. & 2 \\
+    \hline
+    Ajouter un utilisateur & L'administrateur peut ajouter un utilisateur. & 2 \\
+    \hline
+    Modifier un utilisateur & L'administrateur peut modifier un utilisateur. & 3 \\
+    \hline
+    Désactiver un utilisateur & Désactiver un utilisateur & 1 \\
+    \hline
+    Rechercher un utilisateur & L'administrateur peut filtrer les utilisateurs. & 2 \\
+    \hline
+    Exporter les utilisateurs & L'administrateur peut exporter la liste des utilisateurs sous plusieurs formats. & 3 \\
+    \hline
+    Initier une demande & Le collaborateur peut soumettre une demande. & 4 \\
+\hline
+    Modifier l'état d'une demande & Le collaborateur peut prendre en charge, livrer ou annuler une demande. & 2 \\
+\hline
+    Modifier une demande & Le collaborateur peut modifier une demande. & 3 \\
+\hline
+    Aimer une demande & Le collaborateur peut aimer une demande. & 4 \\
+\hline
+    ne pas aimer une demande & Le collaborateur peut ne pas aimer une demande. & 4 \\
+\hline
+    Commenter une demande & Le collaborateur peut commenter une demande. & 5 \\
+\hline
+    Rechercher une demande & L'administrateur peut filtrer les demandes selon plusieurs critères. & 2 \\
+\hline
+    Exporter la listes des  demandes en Excel. & Le collaborateur peut exporter la liste des demandes sous format Excel avec des informations restreintes. & 3 \\
+\hline
+    Exporter la listes des  demandes & L'administrateur peut exporter la liste des demandes sous différents formats. & 2 \\
+\hline
+    Exporter une demande & Le collaborateur peut exporter la demande originale sous format Excel. & 3 \\
+\hline
+    Accéder à un fil d'actualités & Le collaborateur peut accéder à un fil d'actualités. & 5 \\
+\hline
+    Écran d'accueil & Le collaborateur peut accéder à l'écran d'accueil. & 4 \\
+\hline
+    Voir le feed-back graphique de l'avancement des demandes & Le collaborateur a un suivi graphique des demandes par mois. & 4 \\
+\hline
+    Envoyer une notification & Le système doit notifier les utilisateurs à chaque nouvelle demande ou commentaire. & 5 \\
+\hline
+    Envoyer un mail de notification & Le système doit émettre un mail aux utilisateurs à chaque nouvelle demande. & 3 \\
+\hline
+ 
+  \end{tabular}
+  \caption{Backlog du produit}\label{backlogP}
+\end{table}
+
+\subsubsection{Les sprints du projet}
+Pour le bon déroulement du projet, le travail sera découpé en sprint. Ces sprints sont établi à l'aide du backlog produit tout en respectant la priorité des différents modules.
+Le tableau \ref{sprintP} présente les sprints du projet :
+\begin{table}[!ht]
+  \centering
+  \begin{tabularx}{|c|l|c|}
+    \hline
+    % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    Sprint & description & durée \\
+\hline
+    sprint 0 & Établissement du cahier de charge. & 3 semaines \\
+\hline
+    sprint 1 & Choix de la technologies et formation sur cette technologie. & 2 semaines \\
+\hline
+    sprint 2 & Développement des modules gestion des missions et gestion des catégories. & 1 semaine \\
+\hline
+    sprint 3 & Développement des modules gestion des clients et gestions des sites. & 1 semaine \\
+\hline
+    sprint 4 & Développement du module gestion des utilisateurs. & 1 semaine \\
+\hline
+    sprint 5 & Développement du module gestion des demandes. & 3 semaines \\
+\hline
+    sprint 6 & Développement de ma partie exportation des demandes. & 1 semaine \\
+\hline
+    sprint 7 & Développement de la gestion des commentaires et des "j'aimes". & 3 semaines \\
+\hline
+    sprint 8 & Développement du module du notification. & 2 semaine \\
+\hline
+    sprint 9 & Développement du fil d'actualité. & 3 semaines \\
+\hline
+    sprint 10 & Développement de l'écran commun et du suivi graphique. & 1 semaine \\
+\hline
+    sprint 11 & Test et déploiement. & 1 semaine \\
+    \hline
+  \end{tabularx}
+  \caption{Les sprints du projet}\label{sprintP}
+\end{table}
+
+A la fin de chaque sprint, nous aurons un release qui sera examiné par le product owner afin de planifier les modifications et les évolutions à effectuer dans le sprint suivant.
+
+\subsection{Spécification des besoins diagramme de cas d'utilisation global}
+La figure \ref{useCaseGlobal} représente le diagramme de cas d'utilisation global de l'application et les différents acteurs qui interfèrent :
+
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.5]{PrimaryUseCases.png}
+\caption{Diagramme de cas d'utilisation global}
+\label{useCaseGlobal}
+\end{figure}
+
+
+\section*{Conclusion}
+Dans ce chapitre, nous avons déterminé les acteurs principaux dans notre projet ainsi que leur besoins. Ensuite, nous avons établi le Backlog produit sur lequel nous nous sommes appuyés pour bâtir nos sprints.
+Cette étude sera notre base de travail dans le restant du chemain à savoir : la conception et la réalisation de notre projet.
+Dans le chapitre suivant nous.
+
+
+
+
+
+%==============================================================================
+\end{spacing}
