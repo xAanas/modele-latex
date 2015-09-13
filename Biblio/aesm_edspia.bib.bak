@@ -20,18 +20,17 @@ year = {publié le 26 novembre 2014},
 }
 
 @Book{SCRUM,
-author = {Souheib Yousfi and Lilia Sfaxi},
-editor = {INSAT},
-title = {Rapport Latex},
-publisher = {Département Math-info},
-year = {2015},
-}
-
-@Book{RAD,
 author = {Ken Schwaber et Jeff Sutherland},
 title = {Le Guide SCRUM},
 year = {publié en juillet 2013},
 }
+
+@Book{RAD,
+author = {James Martin},
+title = {Rapid Application Development},
+year = {1991},
+}
+
 @Book{YOUSFI2015,
 author = {Souheib Yousfi and Lilia Sfaxi},
 editor = {INSAT},
@@ -63,6 +62,16 @@ year = {2015},
 @misc{Package,
   howpublished = "\url{https://fr.wikipedia.org/wiki/Paquet_(logiciel)}",
   note = "[En ligne; consulté le 13-Septembre-2015]"
+}
+
+@misc{MVC,
+  howpublished = "\url{https://netbeans.org/}",
+  note = "[En ligne; consulté le 31-Août-2015]"
+}
+
+@misc{Netbeans,
+  howpublished = "\url{https://fr.wikipedia.org/wiki/Modèle-vue-contrôleur}",
+  note = "[En ligne; consulté le 09-Septembre-2015]"
 }
 
 @misc{Latex,

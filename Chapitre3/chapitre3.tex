@@ -348,7 +348,7 @@ Config : il contient le routage de l'application et les services.
 Ce sont les différentes entités qui constituent le modèle du domaines.
 Elles représentent la façon avec laquelle les données sont stockés dans la base.	
 Dans le tableau 3.6, nous représentons le rôle de chacune de ces entités.
- 
+
 \begin{table}[!ht]
   \centering
   \begin{tabular}{|l|p{11cm}|}
@@ -382,38 +382,63 @@ Dans le tableau 3.6, nous représentons le rôle de chacune de ces entités.
 
  \item Diagramme de classe des contrôleurs.\\
  La figure \ref{ctrlClass} montre le diagramme de classe des contrôleurs.
- 
+
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.5]{controlerClass.png}
 \caption{Le modèle du domaine}
 \label{ctrlClass}
-\end{figure} 
+\end{figure}
 
- Les contrôleurs sont invoqués selon les routes, chaque route pointe vers une seule méthode d’un contrôleur bien spécifique. Donc une seule route ne peut pas invoquer plusieurs actions simultanément.
+ Les contrôleurs sont invoqués selon les routes, chaque route pointe vers une seule méthode d'un contrôleur bien spécifique. Donc une seule route ne peut pas invoquer plusieurs actions simultanément.
 \end{itemize}
 
 \section{Diagramme comportementaux}
 \subsection{Diagrammes de séquences}
 \begin{itemize}
   \item Diagramme de séquence du cas : ajouter une demande. \\
-  Dans la figure 4.10, nous présentons la création d’une demande à travers les principales interactions entre les différents éléments de l’application.
-L’exemple traité est le cas d’un collaborateur qui crée une demande avec des données correctes.
+  Dans la figure \ref{ajouDemSeq}, nous présentons la création d'une demande à travers les principales interactions entre les différents éléments de l'application.
+L'exemple traité est le cas d'un collaborateur qui crée une demande avec des données correctes.
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[scale=0.5]{controlerClass.png}
-\caption{Le modèle du domaine}
-\label{ctrlClass}
+\includegraphics[scale=0.5]{demandeCreationFinal.png}
+\caption{Diagramme de séquence ajout d'une demande}
+\label{ajouDemSeq}
 \end{figure} 
   
+  Le collaborateur doit remplir tous les champs obligatoires pour que la demande soit correcte. Dans le cas de la soumission avec un champ vide, l'erreur s'affiche près de ce champs. Dans le cas du contournement du vérifieur frontal du formulaire, nous captons l'erreur depuis la base de données et elle est affichée de nouveau dans le formulaire de création.
+Il y a plusieurs autres interactions que nous voulons préciser lors de l'envoie d'une requête, notamment le point d'entrée, à savoir, notre contrôleur frontal, le système de routage et le noyau de SF2.
+Lors de la réponse, DemandeController invoque le moteur de vue TWIG pour l'affichage de la demande dans l'accueil.
   
-  \item 
+  \item Diagramme de séquence du cas : suppression d'un site
+  La figure \ref{suppSiteSeq} illustre le cas du suppression d'un site.
+ 
+ \begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.5]{supressionSiteFinal.png}
+\caption{Diagramme de séquence suppression d'un site}
+\label{suppSiteSeq}
+\end{figure} 
+
+Afin de supprimer un site, il faut d'abord vérifier s'il est entrain d'être traité par une demande. Sinon nous pouvons le supprimer sans problème et le système nous affiche la nouvelle liste sans le site supprimé.
+Le SiteRepository  est le responsable de la vérification de l'existence du site dans une demande et de nous rendre la liste des sites de la base de données. Le SiteManager nous permet de supprimer le site après cette vérification.
 \end{itemize}
 
+\subsection{Diagramme d'activité}
+Dans la section précédente, nous avons détaillé le déroulement de quelques scénario d'utilisations à travers des diagrammes de séquences. Dans cette partie nous allons expliquer le déroulement de l'envoie d'une notification via le diagramme d'activités. Ce diagramme est le plus adéquat pour modéliser l'acheminement du flot de contrôle et des flots de données.
+
+La figure \ref{envNotAct} met en exergue le processus de l'envoie d'une notification.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.7]{enoyerNotificationFinal.png}
+\caption{Diagramme d'activié : envoie d'une notification}
+\label{envNotAct}
+\end{figure} 
 
 \section*{Conclusion}
-Voilà.
+il manque la conclusion.
 
 %==============================================================================
 \end{spacing}

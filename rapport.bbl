@@ -57,7 +57,48 @@
 \newblock [En ligne; consulté le 13-Septembre-2015].
 
 \bibitem{MVC}
-\url{https://fr.wikipedia.org/wiki/Modèle-vue-contrôleur}.
+\url{https://netbeans.org/}.
+\newblock [En ligne; consulté le 31-Août-2015].
+
+\bibitem{Netbeans}
+\url{http://blog.nicolashachet.com/technologies/php/rex-zend-2-vs-symfony-2/}.
 \newblock [En ligne; consulté le 09-Septembre-2015].
+
+\bibitem{Sf2vsZf2}
+\url{https://fr.wikipedia.org/wiki/Modèle-vue-contrôleur}.
+\newblock [En ligne; consulté le 31-Août-2015].
+
+\bibitem{cookBook}
+\url{http://symfony.com/fr/doc/current/cookbook/index.html}.
+\newblock [En ligne; consulté le 31-Août-2015].
+
+\bibitem{Dbal}
+\url{https://packagist.org/}.
+\newblock [En ligne; consulté le 13-Septembre-2015].
+
+\bibitem{Bundles}
+\url{http://symfony.com/fr/doc/current/cookbook/doctrine/dbal.html}.
+\newblock [En ligne;L'un des sites les plus connues pour l'intégration des
+  bundles, consulté le 01-Septembre-2015].
+
+\bibitem{Highcharts}
+\url{http://www.highcharts.com/}.
+\newblock [En ligne; consulté le 01-Septembre-2015].
+
+\bibitem{Bootstrap}
+\url{http://getbootstrap.com/}.
+\newblock [En ligne; consulté le 01-Septembre-2015].
+
+\bibitem{BootstrapGit}
+\url{https://github.com/twbs/bootstrap}.
+\newblock [En ligne; consulté le 01-Septembre-2015].
+
+\bibitem{JqueryUi}
+\url{http://jqueryui.com/}.
+\newblock [En ligne; consulté le 01-Septembre-2015].
+
+\bibitem{AngularJs}
+\url{https://angularjs.org/}.
+\newblock [En ligne; consulté le 13-Septembre-2015].
 
 \end{thebibliography}

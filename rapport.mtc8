@@ -8,3 +8,6 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4}Diagrammes structurels}{\reset@font\mtcSfont 21}{section.3.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1}Diagramme de paquetages}{\reset@font\mtcSSfont 21}{subsection.3.4.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2}Diagramme de classes}{\reset@font\mtcSSfont 22}{subsection.3.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5}Diagramme comportementaux}{\reset@font\mtcSfont 23}{section.3.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1}Diagrammes de s\'equences}{\reset@font\mtcSSfont 23}{subsection.3.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2}Diagramme d'activit\'e}{\reset@font\mtcSSfont 26}{subsection.3.5.2}}

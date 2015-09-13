@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.8)  13 SEP 2015 15:17
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.8)  13 SEP 2015 19:47
 entering extended mode
 **F:/PFE/rapport*Anas/Modele*Latex/rapport.tex
 ("F:/PFE/rapport Anas/Modele Latex/rapport.tex"
@@ -923,6 +923,7 @@ Package: courier 2005/04/12 PSNFSS-v9.2a (WaS)
 ("F:\PFE\rapport Anas\Modele Latex\Chapitre1/chapitre1.aux")
 ("F:\PFE\rapport Anas\Modele Latex\Chapitre2/chapitre2.aux")
 ("F:\PFE\rapport Anas\Modele Latex\Chapitre3/chapitre3.aux")
+("F:\PFE\rapport Anas\Modele Latex\Chapitre4/chapitre4.aux")
 ("F:\PFE\rapport Anas\Modele Latex\Conclusion/conclusion.aux")
 ("F:\PFE\rapport Anas\Modele Latex\Annexe1/annexe1.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
@@ -1086,7 +1087,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count184
 
-<insat.jpg, id=166, 1027.84pt x 360.34625pt>
+<insat.jpg, id=198, 1027.84pt x 360.34625pt>
 File: insat.jpg Graphic file (type jpg)
  <use insat.jpg> [0
 
@@ -1122,6 +1123,8 @@ Package minitoc Info: I0033
 (minitoc)             Writing rapport.mtc10.
 Package minitoc Info: I0033
 (minitoc)             Writing rapport.mtc11.
+Package minitoc Info: I0033
+(minitoc)             Writing rapport.mtc12.
  ("F:\PFE\rapport Anas\Modele Latex\rapport.toc" [2
 
 
@@ -1158,7 +1161,7 @@ Chapitre I.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 4.
 ("F:\PFE\rapport Anas\Modele Latex\rapport.mtc6")
-<Chapitre1/figures/art.jpg, id=328, 243.91125pt x 207.77625pt>
+<Chapitre1/figures/art.jpg, id=390, 243.91125pt x 207.77625pt>
 File: Chapitre1/figures/art.jpg Graphic file (type jpg)
 
 <use Chapitre1/figures/art.jpg> [2
@@ -1166,15 +1169,15 @@ File: Chapitre1/figures/art.jpg Graphic file (type jpg)
 
 
 ] [3 <F:/PFE/rapport Anas/Modele Latex/Chapitre1/figures/art.jpg>]
-<Chapitre1/figures/everwinCXM.png, id=344, 534.49687pt x 252.945pt>
+<Chapitre1/figures/everwinCXM.png, id=406, 534.49687pt x 252.945pt>
 File: Chapitre1/figures/everwinCXM.png Graphic file (type png)
 
 <use Chapitre1/figures/everwinCXM.png>
-<Chapitre1/figures/Dolibarr1.png, id=349, 803.0pt x 667.49374pt>
+<Chapitre1/figures/Dolibarr1.png, id=411, 803.0pt x 667.49374pt>
 File: Chapitre1/figures/Dolibarr1.png Graphic file (type png)
 
 <use Chapitre1/figures/Dolibarr1.png>
-<Chapitre1/figures/accueil.png, id=354, 1027.58907pt x 421.575pt>
+<Chapitre1/figures/accueil.png, id=416, 1027.58907pt x 421.575pt>
 File: Chapitre1/figures/accueil.png Graphic file (type png)
 
 <use Chapitre1/figures/accueil.png>
@@ -1207,7 +1210,7 @@ Overfull \hbox (37.64168pt too wide) in paragraph at lines 184--214
  [][] 
  []
 
-[10] <Chapitre2/figures/PrimaryUseCases.png, id=417, 905.3825pt x 748.7975pt>
+[10] <Chapitre2/figures/PrimaryUseCases.png, id=479, 905.3825pt x 748.7975pt>
 File: Chapitre2/figures/PrimaryUseCases.png Graphic file (type png)
 
 <use Chapitre2/figures/PrimaryUseCases.png> [11 <F:/PFE/rapport Anas/Modele Lat
@@ -1215,7 +1218,7 @@ ex/Chapitre2/figures/PrimaryUseCases.png (PNG copy)>]) [12] [13] [14]
 ("F:\PFE\rapport Anas\Modele Latex\Chapitre3/chapitre3.tex"
 Chapitre III.
 ("F:\PFE\rapport Anas\Modele Latex\rapport.mtc8")
-<Chapitre3/figures/archiTier.jpg, id=446, 1003.75pt x 602.25pt>
+<Chapitre3/figures/archiTier.jpg, id=511, 1003.75pt x 602.25pt>
 File: Chapitre3/figures/archiTier.jpg Graphic file (type jpg)
 
 <use Chapitre3/figures/archiTier.jpg>
@@ -1228,7 +1231,7 @@ Overfull \hbox (18.17694pt too wide) in paragraph at lines 28--29
 
 
 ]
-<Chapitre3/figures/archiApplicative.png, id=453, 510.40688pt x 422.32782pt>
+<Chapitre3/figures/archiApplicative.png, id=518, 510.40688pt x 422.32782pt>
 File: Chapitre3/figures/archiApplicative.png Graphic file (type png)
 
 <use Chapitre3/figures/archiApplicative.png>
@@ -1238,15 +1241,15 @@ Overfull \hbox (26.70879pt too wide) in paragraph at lines 47--48
 
 [16 <F:/PFE/rapport Anas/Modele Latex/Chapitre3/figures/archiTier.jpg>]
 [17 <F:/PFE/rapport Anas/Modele Latex/Chapitre3/figures/archiApplicative.png>]
-<Chapitre3/figures/demandeGestionFinal.png, id=465, 660.4675pt x 599.23875pt>
+<Chapitre3/figures/demandeGestionFinal.png, id=530, 660.4675pt x 599.23875pt>
 File: Chapitre3/figures/demandeGestionFinal.png Graphic file (type png)
 
 <use Chapitre3/figures/demandeGestionFinal.png>
-<Chapitre3/figures/utilisateurGestionFinal.png, id=468, 516.93124pt x 588.1975p
+<Chapitre3/figures/utilisateurGestionFinal.png, id=533, 516.93124pt x 588.1975p
 t>
 File: Chapitre3/figures/utilisateurGestionFinal.png Graphic file (type png)
  <use Chapitre3/figures/utilisateurGestionFinal.png> [18]
-<Chapitre3/figures/GestionParametreFinal.png, id=475, 506.89375pt x 657.45625pt
+<Chapitre3/figures/GestionParametreFinal.png, id=540, 506.89375pt x 657.45625pt
 >
 File: Chapitre3/figures/GestionParametreFinal.png Graphic file (type png)
  <use Chapitre3/figures/GestionParametreFinal.png>
@@ -1257,16 +1260,16 @@ Overfull \hbox (23.19568pt too wide) in paragraph at lines 219--220
 
 LaTeX Warning: Float too large for page by 53.49403pt on input line 222.
 
-<Chapitre3/figures/ExportDonnéesFinal1.png, id=478, 732.7375pt x 549.05125pt>
+<Chapitre3/figures/ExportDonnéesFinal1.png, id=543, 732.7375pt x 549.05125pt>
 File: Chapitre3/figures/ExportDonnéesFinal1.png Graphic file (type png)
 
 <use Chapitre3/figures/ExportDonnéesFinal1.png> [19 <F:/PFE/rapport Anas/Modele
  Latex/Chapitre3/figures/demandeGestionFinal.png (PNG copy)>] [20]
-<Chapitre3/figures/paquetageFinal.png, id=498, 579.16376pt x 459.7175pt>
+<Chapitre3/figures/paquetageFinal.png, id=563, 579.16376pt x 459.7175pt>
 File: Chapitre3/figures/paquetageFinal.png Graphic file (type png)
 
 <use Chapitre3/figures/paquetageFinal.png> [21]
-<Chapitre3/figures/diagrammeClasses.png, id=513, 877.2775pt x 640.3925pt>
+<Chapitre3/figures/diagrammeClasses.png, id=578, 877.2775pt x 640.3925pt>
 File: Chapitre3/figures/diagrammeClasses.png Graphic file (type png)
 
 <use Chapitre3/figures/diagrammeClasses.png>
@@ -1274,18 +1277,85 @@ Overfull \hbox (42.67372pt too wide) in paragraph at lines 343--344
  [][] 
  []
 
-<Chapitre3/figures/controlerClass.png, id=515, 927.465pt x 617.30624pt>
+<Chapitre3/figures/controlerClass.png, id=580, 927.465pt x 617.30624pt>
 File: Chapitre3/figures/controlerClass.png Graphic file (type png)
 
-<use Chapitre3/figures/controlerClass.png>) [22 <F:/PFE/rapport Anas/Modele Lat
-ex/Chapitre3/figures/utilisateurGestionFinal.png (PNG copy)>] [23] [24]
-[25 <F:/PFE/rapport Anas/Modele Latex/Chapitre3/figures/GestionParametreFinal.p
-ng (PNG copy)>] [26 <F:/PFE/rapport Anas/Modele Latex/Chapitre3/figures/ExportD
-onnéesFinal1.png (PNG copy)>] [27 <F:/PFE/rapport Anas/Modele Latex/Chapitre3/f
-igures/paquetageFinal.png (PNG copy)>] [28 <F:/PFE/rapport Anas/Modele Latex/Ch
-apitre3/figures/diagrammeClasses.png (PNG copy)>] [29] [30 <F:/PFE/rapport Anas
-/Modele Latex/Chapitre3/figures/controlerClass.png (PNG copy)>]
-("F:\PFE\rapport Anas\Modele Latex\Conclusion/conclusion.tex") [31
+<use Chapitre3/figures/controlerClass.png> [22 <F:/PFE/rapport Anas/Modele Late
+x/Chapitre3/figures/utilisateurGestionFinal.png (PNG copy)>]
+<Chapitre3/figures/demandeCreationFinal.png, id=587, 957.5775pt x 965.6075pt>
+File: Chapitre3/figures/demandeCreationFinal.png Graphic file (type png)
+
+<use Chapitre3/figures/demandeCreationFinal.png> [23]
+<Chapitre3/figures/supressionSiteFinal.png, id=598, 799.98875pt x 929.4725pt>
+File: Chapitre3/figures/supressionSiteFinal.png Graphic file (type png)
+
+<use Chapitre3/figures/supressionSiteFinal.png> [24] [25]
+<Chapitre3/figures/enoyerNotificationFinal.png, id=620, 647.41875pt x 675.52374
+pt>
+File: Chapitre3/figures/enoyerNotificationFinal.png Graphic file (type png)
+ <use Chapitre3/figures/enoyerNotificationFinal.png>) [26] [27 <F:/PFE/rapport 
+Anas/Modele Latex/Chapitre3/figures/GestionParametreFinal.png (PNG copy)>]
+[28 <F:/PFE/rapport Anas/Modele Latex/Chapitre3/figures/ExportDonnéesFinal1.png
+ (PNG copy)>] [29 <F:/PFE/rapport Anas/Modele Latex/Chapitre3/figures/paquetage
+Final.png (PNG copy)>] [30 <F:/PFE/rapport Anas/Modele Latex/Chapitre3/figures/
+diagrammeClasses.png (PNG copy)>] [31 <F:/PFE/rapport Anas/Modele Latex/Chapitr
+e3/figures/controlerClass.png (PNG copy)>] [32 <F:/PFE/rapport Anas/Modele Late
+x/Chapitre3/figures/demandeCreationFinal.png (PNG copy)>] [33 <F:/PFE/rapport A
+nas/Modele Latex/Chapitre3/figures/supressionSiteFinal.png (PNG copy)>]
+[34 <F:/PFE/rapport Anas/Modele Latex/Chapitre3/figures/enoyerNotificationFinal
+.png (PNG copy)>] ("F:\PFE\rapport Anas\Modele Latex\Chapitre4/chapitre4.tex"
+Chapitre IV.
+("F:\PFE\rapport Anas\Modele Latex\rapport.mtc9") [35
+
+
+
+]
+<Chapitre4/figures/commit.png, id=673, 785.18344pt x 532.23843pt>
+File: Chapitre4/figures/commit.png Graphic file (type png)
+
+<use Chapitre4/figures/commit.png>
+<Chapitre4/figures/contributions.png, id=674, 546.54187pt x 216.05719pt>
+File: Chapitre4/figures/contributions.png Graphic file (type png)
+
+<use Chapitre4/figures/contributions.png> [36 <F:/PFE/rapport Anas/Modele Latex
+/Chapitre4/figures/commit.png>] [37 <F:/PFE/rapport Anas/Modele Latex/Chapitre4
+/figures/contributions.png>] [38]
+<Chapitre4/figures/archiTech.png, id=706, 516.42938pt x 427.5975pt>
+File: Chapitre4/figures/archiTech.png Graphic file (type png)
+
+<use Chapitre4/figures/archiTech.png> [39 <F:/PFE/rapport Anas/Modele Latex/Cha
+pitre4/figures/archiTech.png>]
+<Chapitre4/figures/Login.png, id=715, 695.59875pt x 380.17032pt>
+File: Chapitre4/figures/Login.png Graphic file (type png)
+
+<use Chapitre4/figures/Login.png>
+Overfull \hbox (3.21898pt too wide) in paragraph at lines 110--111
+ [][] 
+ []
+
+<Chapitre4/figures/menu.png, id=717, 752.8125pt x 321.2pt>
+File: Chapitre4/figures/menu.png Graphic file (type png)
+
+<use Chapitre4/figures/menu.png>
+Overfull \hbox (43.26831pt too wide) in paragraph at lines 121--122
+ [][] 
+ []
+
+[40 <F:/PFE/rapport Anas/Modele Latex/Chapitre4/figures/Login.png>]
+<Chapitre4/figures/accueil.png, id=725, 668.4975pt x 532.23843pt>
+File: Chapitre4/figures/accueil.png Graphic file (type png)
+
+<use Chapitre4/figures/accueil.png>
+File: Chapitre4/figures/accueil.png Graphic file (type png)
+ <use Chapitre4/figures/accueil.png>
+<Chapitre4/figures/demandeEnDiagramme.png, id=727, 419.31656pt x 258.9675pt>
+File: Chapitre4/figures/demandeEnDiagramme.png Graphic file (type png)
+
+<use Chapitre4/figures/demandeEnDiagramme.png>) [41 <F:/PFE/rapport Anas/Modele
+ Latex/Chapitre4/figures/menu.png (PNG copy)>] [42 <F:/PFE/rapport Anas/Modele 
+Latex/Chapitre4/figures/accueil.png>] [43 <F:/PFE/rapport Anas/Modele Latex/Cha
+pitre4/figures/demandeEnDiagramme.png>]
+("F:\PFE\rapport Anas\Modele Latex\Conclusion/conclusion.tex") [44
 
 
 
@@ -1298,10 +1368,10 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 6.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)) [32
+) [45
 
 
-]
+]) [46]
 ("F:\PFE\rapport Anas\Modele Latex\Annexe1/annexe1.tex"
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
@@ -1311,13 +1381,13 @@ less on input line 10.
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 12.
 
-[33
+[47
 
 
-] <Annexe1/figures/ingenieur.jpg, id=613, 259.97125pt x 194.7275pt>
+] <Annexe1/figures/ingenieur.jpg, id=810, 259.97125pt x 194.7275pt>
 File: Annexe1/figures/ingenieur.jpg Graphic file (type jpg)
 
-<use Annexe1/figures/ingenieur.jpg>) [34 <F:/PFE/rapport Anas/Modele Latex/Anne
+<use Annexe1/figures/ingenieur.jpg>) [48 <F:/PFE/rapport Anas/Modele Latex/Anne
 xe1/figures/ingenieur.jpg>]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -1342,11 +1412,11 @@ Package minitoc(hints) Warning: W0024
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 84.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
-[35
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
+[49
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
  ("F:\PFE\rapport Anas\Modele Latex\rapport.aux"
 ("F:\PFE\rapport Anas\Modele Latex\Remerciement/remerciement.aux")
 ("F:\PFE\rapport Anas\Modele Latex\Resumes/resumeF.aux")
@@ -1355,22 +1425,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
 ("F:\PFE\rapport Anas\Modele Latex\Chapitre1/chapitre1.aux")
 ("F:\PFE\rapport Anas\Modele Latex\Chapitre2/chapitre2.aux")
 ("F:\PFE\rapport Anas\Modele Latex\Chapitre3/chapitre3.aux")
+("F:\PFE\rapport Anas\Modele Latex\Chapitre4/chapitre4.aux")
 ("F:\PFE\rapport Anas\Modele Latex\Conclusion/conclusion.aux")
 ("F:\PFE\rapport Anas\Modele Latex\Annexe1/annexe1.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: D46D5590A6071ADCD8F726E7528F8E93;3148.
+(rerunfilecheck)             Checksum: EE5953D5FDD3BA136F9B6F6B63F50D48;3768.
 Package rerunfilecheck Info: File `rapport.brf' has not changed.
-(rerunfilecheck)             Checksum: C916415021871A3C9459529DF932948D;997.
+(rerunfilecheck)             Checksum: 9700B55128EB6B4DCFBE42C4B335F7DD;1510.
  ) 
 Here is how much of TeX's memory you used:
- 16727 strings out of 494053
- 239443 string characters out of 3146189
- 436922 words of memory out of 3000000
- 19113 multiletter control sequences out of 15000+200000
+ 16916 strings out of 494053
+ 243386 string characters out of 3146189
+ 435922 words of memory out of 3000000
+ 19233 multiletter control sequences out of 15000+200000
  78409 words of font info for 78 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 49i,11n,45p,3344b,605s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,11n,46p,3344b,605s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Program Files (x86)/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Program Files (x86)/MiKTeX 2.9/f
@@ -1383,9 +1454,9 @@ MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmri12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/u
 crr8a.pfb>
-Output written on rapport.pdf (44 pages, 1395212 bytes).
+Output written on rapport.pdf (58 pages, 1849710 bytes).
 PDF statistics:
- 696 PDF objects out of 1000 (max. 8388607)
- 160 named destinations out of 1000 (max. 500000)
- 417 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 901 PDF objects out of 1000 (max. 8388607)
+ 205 named destinations out of 1000 (max. 500000)
+ 531 words of extra memory for PDF output out of 10000 (max. 10000000)
 
