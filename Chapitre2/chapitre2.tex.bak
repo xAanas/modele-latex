@@ -1,4 +1,3 @@
-
 \setcounter{chapter}{1}
 \chapter{Capture,analyse et spécification des besoins}
 \minitoc %insert la minitoc
@@ -19,6 +18,7 @@
 \begin{spacing}{1.5}
 %==============================================================================
 \section*{Introduction}
+
 Ce chapitre représente la case de départ dans notre travail. En effet, nous analysons et spécifions les besoins du projet. Ensuite, nous identifions les différents acteurs. Et enfin, nous modélisons le tout dans un diagramme de cas d'utilisation général qui sera notre file conducteur durant la prochaine phase.
 
 \section{Étude de l'existant}
@@ -35,12 +35,8 @@ Ca se fait à travers l'Email, Skype ou par téléphone.
 \end{itemize}
 
 \section{Critique de l'existant }
-Il faut Bien choisir les diagrammes adéquats pour votre application. En général, les
-diagrammes obligatoires sont les diagrammes de cas d'utilisation, de classe et de
-séquence. Vous pouvez ajouter en plus le diagramme qui vous semble pertinent :
-par exemple, pour une application sur plusieurs tiers, il est intéressant de
-montrer le diagramme de déploiement;
-
+Cette solution semble satisfaisante, en effet, elle répond au besoins mais elle est répartie sur plusieurs plates-formes donc notre travail est un peu éparpillé. En même temps cette solution est trop manuelle, d'où la grande perte du temps à chaque fois que nous voulons faire une tâche. En plus, il y a le risque de la faille humaine, e.g. tomber dans l'oublie et ne pas faire une copie de sauvegarde.
+Donc l'automatisation de ces procédures et leur centralisation est une nécessité. 
 
 
 

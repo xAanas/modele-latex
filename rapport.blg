@@ -10,8 +10,9 @@ A level-1 auxiliary file: Conclusion/conclusion.aux
 The style file: Biblio/unsrt_modif.bst
 A level-1 auxiliary file: Annexe1/annexe1.aux
 Database file #1: Biblio/aesm_edspia.bib
+Warning--I didn't find a database entry for "SFAXI2015"
 Warning--empty publisher in RUP
 Warning--empty publisher in XP
 Warning--empty publisher in SCRUM
 Warning--empty publisher in RAD
-(There were 4 warnings)
+(There were 5 warnings)

@@ -51,14 +51,14 @@ Maintenant, nous présentons l'architecture applicative de notre application, sa 
 \end{figure}
 
 \begin{itemize}
-  \item[\ding{108}] La couche présentation : elle représente le contact de l'utilisateur avec l'application, elle lui permet le pilotage et la configuration de l'application. Elle invoque le service métier adéquat à la requête du client et lui retourne le résultat. Cette couche est composée de :
+  \item La couche présentation : elle représente le contact de l'utilisateur avec l'application, elle lui permet le pilotage et la configuration de l'application. Elle invoque le service métier adéquat à la requête du client et lui retourne le résultat. Cette couche est composée de :
       \begin{itemize}
         \item Contrôleur frontal : il représente le point d'entrée de notre application.
         \item Contrôleurs : ils décident selon la requête du client et les configuration du système, quel service sera invoqué et quelle vue sera rendu, autrement dit, ils orchestrent les différents éléments.
         \item Vues : le résultat de la requête de l'utilisateur est récupéré et traduit en HTML et Javascript puis renvoyé au client sous forme de vue selon la charte graphique utilisée dans l'application.
       \end{itemize}
-  \item[\ding{108}] La couche métier : c'est l'élément qui englobe la logique métier et ses traitements spécifiques. Elle est invoquée via les contrôleurs pour traiter les requêtes client.
-  \item[\ding{108}] La couche accès au base de données : cette couche assure la communication avec la source de données afin d'assurer la séparation entre la logique métier et la logique accès au données.
+  \item La couche métier : c'est l'élément qui englobe la logique métier et ses traitements spécifiques. Elle est invoquée via les contrôleurs pour traiter les requêtes client.
+  \item La couche accès au base de données : cette couche assure la communication avec la source de données afin d'assurer la séparation entre la logique métier et la logique accès au données.
 	  Elle est composée de :
         \begin{itemize}
           \item Managers : Ils assurent la persistance des données dans la base de données.
@@ -84,7 +84,7 @@ La création des demandes est conduite par les collaborateurs en France. Les coll
 \end{figure}
 \begin{itemize}
   \item Description du cas d'utilisation : ajout d'une demande \\
-  Le tableau \ref{ajoutDemande}. décrit le cas d'utilisation "ajout d'une demande".
+  Le tableau 3. décrit le cas d'utilisation "ajout d'une demande".
 
 \begin{table}[!ht]
 	\centering
@@ -173,7 +173,8 @@ Le figure \ref{useCaseUser} illustre le diagramme de cas d'utilisation de gestio
 \label{useCaseUser}
 \end{figure}
 
- \textbf{Description du cas d'utilisation : ajout d'un utilisateur} \\
+\begin{itemize}
+  \item Description du cas d'utilisation : ajout d'un utilisateur \\
   Ce cas est décrit par le tableau \ref{addUserTab}.
 
 \begin{table}[!ht]
@@ -209,6 +210,7 @@ Le figure \ref{useCaseUser} illustre le diagramme de cas d'utilisation de gestio
   \caption{Ajout d'un utilisateur}\label{addUserTab}
 \end{table}
 
+\end{itemize}
 
 \subsection{Module gestion des paramètres de la demandes.}
 Cette partie regroupe les différentes fonctionnalités qui servent à paramétrer les demandes. Vue que les missions effectuées dans l'entreprise sont connues d'avance, c'est le directeur de l'entreprise qui est chargé de les prédéfinir. Les clients et leurs sites sont définis au préalable comme ils peuvent être définis lors de la soumission d'une nouvelle demande.
@@ -220,7 +222,8 @@ La figure \ref{useCaseParametre} montre ces différents cas d'activités.
 \label{useCaseParametre}
 \end{figure}
 
- \textbf{Description du cas d'utilisation : ajout d'un nouveau site} \\
+\begin{itemize}
+  \item Description du cas d'utilisation : ajout d'un nouveau site \\
   Ce cas d'utilisation est décrit par le tableau \ref{AjoutSitTab}.
 
 \begin{table}[!ht]
@@ -263,6 +266,7 @@ La figure \ref{useCaseParametre} montre ces différents cas d'activités.
   \end{tabular}
   \caption{Ajout d'un nouveau site}\label{AjoutSitTab}
 \end{table}
+\end{itemize}
 
 \subsection{Module exportation des données}
 Ce module permet en fait plusieurs types d'exportation.
@@ -277,7 +281,8 @@ La figure \ref{useCaseExporter} met en évidence ces cas d'utilisation.
 \label{useCaseExporter}
 \end{figure}
 
-\textbf{Description du cas d'utilisation : exporter la liste des demandes.}\\
+\begin{itemize}
+  \item Description du cas d'utilisation : exporter la liste des demandes.\\
   Le tableau \ref{expListTab} décrit ce cas d'utilisation .
 
 \begin{table}[!ht]
@@ -305,6 +310,7 @@ La figure \ref{useCaseExporter} met en évidence ces cas d'utilisation.
   \caption{Exporter la liste des demandes}\label{expListTab}
 \end{table}
 Après la présentation des différents diagrammes de cas d'utilisation, nous détaillons dans la section suivante, la conception de notre application à travers les diagrammes structurels et comportementaux.
+\end{itemize}
 
 \section{Diagrammes structurels}
 \subsection{Diagramme de paquetages}
@@ -330,7 +336,7 @@ Config : il contient le routage de l'application et les services.
 
 \subsection{Diagramme de classes}
 \begin{itemize}
-  \item[\ding{108}] Le modèle du domaine.\\
+  \item Le modèle du domaine.\\
   La figure \ref{ModlDmnClass} illustre le modèle du domaine de l'application web avec les différentes dépendances.
 
 \begin{figure}[!ht]
@@ -375,7 +381,7 @@ Dans le tableau 3.6, nous représentons le rôle de chacune de ces entités.
   \caption{Descriptif des entités de l'application}\label{entityTab}
 \end{table}
 
- \item[\ding{108}] Diagramme de classe des contrôleurs.\\
+ \item Diagramme de classe des contrôleurs.\\
  La figure \ref{ctrlClass} montre le diagramme de classe des contrôleurs.
 
 \begin{figure}[!ht]
@@ -391,7 +397,7 @@ Dans le tableau 3.6, nous représentons le rôle de chacune de ces entités.
 \section{Diagramme comportementaux}
 \subsection{Diagrammes de séquences}
 \begin{itemize}
-  \item[\ding{108}] Diagramme de séquence du cas : ajouter une demande. \\
+  \item Diagramme de séquence du cas : ajouter une demande. \\
   Dans la figure \ref{ajouDemSeq}, nous présentons la création d'une demande à travers les principales interactions entre les différents éléments de l'application.
 L'exemple traité est le cas d'un collaborateur qui crée une demande avec des données correctes.
 
@@ -406,7 +412,7 @@ L'exemple traité est le cas d'un collaborateur qui crée une demande avec des don
 Il y a plusieurs autres interactions que nous voulons préciser lors de l'envoie d'une requête, notamment le point d'entrée, à savoir, notre contrôleur frontal, le système de routage et le noyau de SF2.
 Lors de la réponse, DemandeController invoque le moteur de vue TWIG pour l'affichage de la demande dans l'accueil.
   
-  \item[\ding{108}] Diagramme de séquence du cas : suppression d'un site
+  \item Diagramme de séquence du cas : suppression d'un site
   La figure \ref{suppSiteSeq} illustre le cas du suppression d'un site.
  
  \begin{figure}[!ht]

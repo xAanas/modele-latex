@@ -54,7 +54,7 @@ UrbaProd travaille et accompagne les processus d'aménagements des grands comptes
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.8]{reference.png}
-\caption{Organigramme de l'entreprise}
+\caption{Références de l'entreprise}
 \label{refenrenceImg}
 \end{figure}
 
@@ -63,7 +63,7 @@ Il existe plusieurs solutions de gestion de relation client sur le marché. En ex
 \subsection{Version éditeur}
 \begin{itemize}
 
-\item
+\item[\ding{108}]
 CRM de Fitnet Manager : Fitnet Avant-vente est l'outil de gestion commerciale de Fitnet Manager. Les solutions CRM et ERP existent côtes à côtes. Activées ensemble, elles fonctionnent de manière entièrement intégrée. Fitnet Manager couvre ainsi l'ensemble du cycle de vie de l'activité : depuis la prospection jusqu'à la facturation et l'analyse dans les reporting \cite{Fitnet}.
 
   \item
@@ -129,7 +129,7 @@ Le tableau \ref{compSolExt} présente un comparatif entre les solutions existante
   \caption{Comparatif entre les solutions existantes}\label{compSolExt}
 \end{table}
 
-Les applications étudiées, qu'elles soient en versions éditeurs ou même gratuites, et malgré leurs adaptabilités et la diversité de leurs fonctionnalités offertes, restes incapable de satisfaire les exigences de la société. En effet, elles n'intègrent pas un système de commentaire et leur manipulation reste plutôt complexe comparée à la solution à laquelle nous voulons aboutir.
+Les applications étudiées, qu'elles soient en versions éditeurs ou même gratuites, et malgré leurs adaptabilités et la diversité de leurs fonctionnalités offertes, restent incapable de satisfaire les exigences de la société. En effet, elles n'intègrent pas un système de commentaire et leur manipulation reste plutôt complexe comparée à la solution à laquelle nous voulons aboutir.
 
 \section{Objectif du projet}
 Nous voulons offrir un meilleur service dans nos réponses aux collaborateurs à l'aide d'un véritable outil de gestion des demandes. Aujourd'hui nous visons de :
@@ -175,7 +175,7 @@ Notion :
 
 
 \section*{Conclusion}
-Dans ce chapitre, nous avons présenté le cadre général du travail, en commençant par la présentation de l'entreprise Ellouze and Partners, passant par la problématique du projet, ainsi qu'une étude des solutions existantes sur le marché. Et pour finir, nous avons présenté la méthode qui va guider notre travail tout au long du projet. Dans le chapitre suivant, nous introduisons les spécifications de notre projet.
+Dans ce chapitre, nous avons présenté le cadre général du travail, en commençant par la présentation de l'entreprise Urbaprod, passant par la problématique du projet, ainsi qu'une étude des solutions existantes sur le marché. Et pour finir, nous avons présenté la méthode qui va guider notre travail tout au long du projet. Dans le chapitre suivant, nous introduisons les spécifications de notre projet.
 
 
 %==============================================================================

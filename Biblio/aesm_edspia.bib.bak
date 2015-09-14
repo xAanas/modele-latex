@@ -1,11 +1,6 @@
 % This file was created with JabRef 2.3.1.
 % Encoding: UTF8
 
-@Book{UML,
-author = {Dan Pilone,NeilPitman},
-title = {UML 2.0 in Nutshell},
-year = {publié le Juin 2005},
-}
 
 @Book{RUP,
 author = {Phillipe Kruchten},
