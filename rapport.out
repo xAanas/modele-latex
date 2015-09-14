@@ -1,52 +1,50 @@
 \BOOKMARK [0][]{Doc-Start}{Liste des Figures}{}% 1
 \BOOKMARK [0][]{Doc-Start}{Liste des Tableaux}{}% 2
-\BOOKMARK [0][]{Doc-Start}{R\351sum\351}{}% 3
-\BOOKMARK [0][]{Doc-Start}{Abstract}{}% 4
-\BOOKMARK [0][]{Doc-Start}{Introduction G\351n\351rale}{}% 5
-\BOOKMARK [0][]{chapter.1}{I Cadre du projet}{}% 6
-\BOOKMARK [1][]{section.1.1}{1 Pr\351sentation de l'organisme d'accueil}{chapter.1}% 7
-\BOOKMARK [2][]{subsection.1.1.1}{1.1 L'entreprise "UrbaProd"}{section.1.1}% 8
-\BOOKMARK [1][]{section.1.2}{2 Probl\351matique}{chapter.1}% 9
-\BOOKMARK [2][]{subsection.1.2.1}{2.1 Domaine d'expertise}{section.1.2}% 10
-\BOOKMARK [1][]{section.1.3}{3 Solutions existantes}{chapter.1}% 11
-\BOOKMARK [2][]{subsection.1.3.1}{3.1 Version \351diteur}{section.1.3}% 12
-\BOOKMARK [2][]{subsection.1.3.2}{3.2 Version libre}{section.1.3}% 13
-\BOOKMARK [2][]{subsection.1.3.3}{3.3 Etude comparative}{section.1.3}% 14
-\BOOKMARK [1][]{section.1.4}{4 Objectif du projet}{chapter.1}% 15
-\BOOKMARK [1][]{section.1.5}{5 Contexte m\351thodologique du projet}{chapter.1}% 16
-\BOOKMARK [2][]{subsection.1.5.1}{5.1 Le choix de la M\351thode Scrum}{section.1.5}% 17
-\BOOKMARK [2][]{subsection.1.5.2}{5.2 Les r\364les et les notions}{section.1.5}% 18
-\BOOKMARK [0][]{chapter.2}{II Capture,analyse et sp\351cification des besoins}{}% 19
-\BOOKMARK [1][]{section.2.1}{1 \311tude de l'existant}{chapter.2}% 20
-\BOOKMARK [1][]{section.2.2}{2 Critique de l'existant }{chapter.2}% 21
-\BOOKMARK [1][]{section.2.3}{3 Analyse des besoins}{chapter.2}% 22
-\BOOKMARK [2][]{subsection.2.3.1}{3.1 Les acteurs}{section.2.3}% 23
-\BOOKMARK [2][]{subsection.2.3.2}{3.2 Les besoins fonctionnels}{section.2.3}% 24
-\BOOKMARK [2][]{subsection.2.3.3}{3.3 Les besoins non fonctionnels}{section.2.3}% 25
-\BOOKMARK [2][]{subsection.2.3.4}{3.4 Planification du projet}{section.2.3}% 26
-\BOOKMARK [3][]{subsubsection.2.3.4.1}{3.4.1 Acteurs du projet}{subsection.2.3.4}% 27
-\BOOKMARK [3][]{subsubsection.2.3.4.2}{3.4.2 Backlog produit}{subsection.2.3.4}% 28
-\BOOKMARK [3][]{subsubsection.2.3.4.3}{3.4.3 Les sprints du projet}{subsection.2.3.4}% 29
-\BOOKMARK [2][]{subsection.2.3.5}{3.5 Sp\351cification des besoins diagramme de cas d'utilisation global}{section.2.3}% 30
-\BOOKMARK [0][]{chapter.3}{III Etude conceptuelle}{}% 31
-\BOOKMARK [1][]{section.3.1}{1 Architecture physique}{chapter.3}% 32
-\BOOKMARK [1][]{section.3.2}{2 Architecture logicielle}{chapter.3}% 33
-\BOOKMARK [1][]{section.3.3}{3 Raffinement des diagrammes des cas d'utilisations}{chapter.3}% 34
-\BOOKMARK [2][]{subsection.3.3.1}{3.1 module gestion de demande}{section.3.3}% 35
-\BOOKMARK [2][]{subsection.3.3.2}{3.2 module gestion des utilisateurs}{section.3.3}% 36
-\BOOKMARK [2][]{subsection.3.3.3}{3.3 Module gestion des param\350tres de la demandes.}{section.3.3}% 37
-\BOOKMARK [2][]{subsection.3.3.4}{3.4 Module exportation des donn\351es}{section.3.3}% 38
-\BOOKMARK [1][]{section.3.4}{4 Diagrammes structurels}{chapter.3}% 39
-\BOOKMARK [2][]{subsection.3.4.1}{4.1 Diagramme de paquetages}{section.3.4}% 40
-\BOOKMARK [2][]{subsection.3.4.2}{4.2 Diagramme de classes}{section.3.4}% 41
-\BOOKMARK [1][]{section.3.5}{5 Diagramme comportementaux}{chapter.3}% 42
-\BOOKMARK [2][]{subsection.3.5.1}{5.1 Diagrammes de s\351quences}{section.3.5}% 43
-\BOOKMARK [2][]{subsection.3.5.2}{5.2 Diagramme d'activit\351}{section.3.5}% 44
-\BOOKMARK [0][]{chapter.4}{IV R\351alisation}{}% 45
-\BOOKMARK [1][]{section.4.1}{1 Environnements de travail et choix techniques}{chapter.4}% 46
-\BOOKMARK [2][]{subsection.4.1.1}{1.1 Environnements de travail}{section.4.1}% 47
-\BOOKMARK [2][]{subsection.4.1.2}{1.2 Technologies}{section.4.1}% 48
-\BOOKMARK [1][]{section.4.2}{2 Pr\351sentation de l'application}{chapter.4}% 49
-\BOOKMARK [0][]{chapter*.52}{Conclusion G\351n\351rale et Perspectives}{}% 50
-\BOOKMARK [0][]{chapter*.52}{Bibliographique}{}% 51
-\BOOKMARK [0][]{chapter*.53}{Annexe : Remarques Diverses}{}% 52
+\BOOKMARK [0][]{Doc-Start}{Introduction G\351n\351rale}{}% 3
+\BOOKMARK [0][]{chapter.1}{I Cadre du projet}{}% 4
+\BOOKMARK [1][]{section.1.1}{1 Pr\351sentation de l'organisme d'accueil}{chapter.1}% 5
+\BOOKMARK [2][]{subsection.1.1.1}{1.1 L'entreprise "UrbaProd"}{section.1.1}% 6
+\BOOKMARK [1][]{section.1.2}{2 Probl\351matique}{chapter.1}% 7
+\BOOKMARK [2][]{subsection.1.2.1}{2.1 Domaine d'expertise}{section.1.2}% 8
+\BOOKMARK [1][]{section.1.3}{3 Solutions existantes}{chapter.1}% 9
+\BOOKMARK [2][]{subsection.1.3.1}{3.1 Version \351diteur}{section.1.3}% 10
+\BOOKMARK [2][]{subsection.1.3.2}{3.2 Version libre}{section.1.3}% 11
+\BOOKMARK [2][]{subsection.1.3.3}{3.3 Etude comparative}{section.1.3}% 12
+\BOOKMARK [1][]{section.1.4}{4 Objectif du projet}{chapter.1}% 13
+\BOOKMARK [1][]{section.1.5}{5 Contexte m\351thodologique du projet}{chapter.1}% 14
+\BOOKMARK [2][]{subsection.1.5.1}{5.1 Le choix de la M\351thode Scrum}{section.1.5}% 15
+\BOOKMARK [2][]{subsection.1.5.2}{5.2 Les r\364les et les notions}{section.1.5}% 16
+\BOOKMARK [0][]{chapter.2}{II Capture,analyse et sp\351cification des besoins}{}% 17
+\BOOKMARK [1][]{section.2.1}{1 \311tude de l'existant}{chapter.2}% 18
+\BOOKMARK [1][]{section.2.2}{2 Critique de l'existant }{chapter.2}% 19
+\BOOKMARK [1][]{section.2.3}{3 Analyse des besoins}{chapter.2}% 20
+\BOOKMARK [2][]{subsection.2.3.1}{3.1 Les acteurs}{section.2.3}% 21
+\BOOKMARK [2][]{subsection.2.3.2}{3.2 Les besoins fonctionnels}{section.2.3}% 22
+\BOOKMARK [2][]{subsection.2.3.3}{3.3 Les besoins non fonctionnels}{section.2.3}% 23
+\BOOKMARK [2][]{subsection.2.3.4}{3.4 Planification du projet}{section.2.3}% 24
+\BOOKMARK [3][]{subsubsection.2.3.4.1}{3.4.1 Acteurs du projet}{subsection.2.3.4}% 25
+\BOOKMARK [3][]{subsubsection.2.3.4.2}{3.4.2 Backlog produit}{subsection.2.3.4}% 26
+\BOOKMARK [3][]{subsubsection.2.3.4.3}{3.4.3 Les sprints du projet}{subsection.2.3.4}% 27
+\BOOKMARK [2][]{subsection.2.3.5}{3.5 Sp\351cification des besoins diagramme de cas d'utilisation global}{section.2.3}% 28
+\BOOKMARK [0][]{chapter.3}{III Etude conceptuelle}{}% 29
+\BOOKMARK [1][]{section.3.1}{1 Architecture physique}{chapter.3}% 30
+\BOOKMARK [1][]{section.3.2}{2 Architecture logicielle}{chapter.3}% 31
+\BOOKMARK [1][]{section.3.3}{3 Raffinement des diagrammes des cas d'utilisations}{chapter.3}% 32
+\BOOKMARK [2][]{subsection.3.3.1}{3.1 module gestion de demande}{section.3.3}% 33
+\BOOKMARK [2][]{subsection.3.3.2}{3.2 module gestion des utilisateurs}{section.3.3}% 34
+\BOOKMARK [2][]{subsection.3.3.3}{3.3 Module gestion des param\350tres de la demandes.}{section.3.3}% 35
+\BOOKMARK [2][]{subsection.3.3.4}{3.4 Module exportation des donn\351es}{section.3.3}% 36
+\BOOKMARK [1][]{section.3.4}{4 Diagrammes structurels}{chapter.3}% 37
+\BOOKMARK [2][]{subsection.3.4.1}{4.1 Diagramme de paquetages}{section.3.4}% 38
+\BOOKMARK [2][]{subsection.3.4.2}{4.2 Diagramme de classes}{section.3.4}% 39
+\BOOKMARK [1][]{section.3.5}{5 Diagramme comportementaux}{chapter.3}% 40
+\BOOKMARK [2][]{subsection.3.5.1}{5.1 Diagrammes de s\351quences}{section.3.5}% 41
+\BOOKMARK [2][]{subsection.3.5.2}{5.2 Diagramme d'activit\351}{section.3.5}% 42
+\BOOKMARK [0][]{chapter.4}{IV R\351alisation}{}% 43
+\BOOKMARK [1][]{section.4.1}{1 Environnements de travail et choix techniques}{chapter.4}% 44
+\BOOKMARK [2][]{subsection.4.1.1}{1.1 Environnements de travail}{section.4.1}% 45
+\BOOKMARK [2][]{subsection.4.1.2}{1.2 Technologies}{section.4.1}% 46
+\BOOKMARK [1][]{section.4.2}{2 Pr\351sentation de l'application}{chapter.4}% 47
+\BOOKMARK [0][]{chapter*.52}{Conclusion G\351n\351rale et Perspectives}{}% 48
+\BOOKMARK [0][]{chapter*.52}{Bibliographique}{}% 49
+\BOOKMARK [0][]{chapter*.53}{Annexe : Remarques Diverses}{}% 50

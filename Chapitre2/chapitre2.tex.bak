@@ -16,7 +16,7 @@
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
 
-\begin{spacing}{1.2}
+\begin{spacing}{1.5}
 %==============================================================================
 \section*{Introduction}
 Ce chapitre représente la case de départ dans notre travail. En effet, nous analysons et spécifions les besoins du projet. Ensuite, nous identifions les différents acteurs. Et enfin, nous modélisons le tout dans un diagramme de cas d'utilisation général qui sera notre file conducteur durant la prochaine phase.
@@ -171,7 +171,7 @@ Dans le tableau \ref{backlogP}, nous présentons le Backlog établi au début du pr
 \hline
     Envoyer un mail de notification & Le système doit émettre un mail aux utilisateurs à chaque nouvelle demande. & 3 \\
 \hline
- 
+
   \end{tabular}
   \caption{Backlog du produit}\label{backlogP}
 \end{table}
@@ -229,7 +229,7 @@ La figure \ref{useCaseGlobal} représente le diagramme de cas d'utilisation globa
 \section*{Conclusion}
 Dans ce chapitre, nous avons déterminé les acteurs principaux dans notre projet ainsi que leur besoins. Ensuite, nous avons établi le Backlog produit sur lequel nous nous sommes appuyés pour bâtir nos sprints.
 Cette étude sera notre base de travail dans le restant du chemain à savoir : la conception et la réalisation de notre projet.
-Dans le chapitre suivant nous.
+Dans le chapitre suivant nous allons exposer notre vue conceptuelle vis-à-vis du projet.
 
 
 

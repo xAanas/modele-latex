@@ -1,4 +1,5 @@
-\setcounter{mtc}{5} %indique le numéro réel du chapitre, pour la mini table des matières
+
+\setcounter{mtc}{3} %indique le numéro réel du chapitre, pour la mini table des matières
 \chapter{Cadre du projet}
 \minitoc  %insert la minitoc
 
