@@ -1,40 +1,49 @@
 \select@language {french}
-\contentsline {xchapter}{}{iv}{Doc-Start}
 \contentsline {xchapter}{}{v}{Doc-Start}
+\contentsline {xchapter}{}{vi}{Doc-Start}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Cadre du projet}{2}{chapter.1}
-\contentsline {figure}{\numberline {I.1}{\ignorespaces \'Etat de l'art\relax }}{3}{figure.caption.2}
-\contentsline {figure}{\numberline {I.2}{\ignorespaces Fonctionnalit\'es offertes par Everwin CXM \cite {Everwin} \relax }}{4}{figure.caption.3}
-\contentsline {figure}{\numberline {I.3}{\ignorespaces architecture Dolibarr \cite {Dolibarr} \relax }}{5}{figure.caption.4}
-\contentsline {figure}{\numberline {I.4}{\ignorespaces Ecran d'accueil de Dolibarr \cite {Dolibarr} \relax }}{5}{figure.caption.5}
+\contentsline {figure}{\numberline {I.1}{\ignorespaces Organigramme de l'entreprise\relax }}{3}{figure.caption.2}
+\contentsline {figure}{\numberline {I.2}{\ignorespaces Organigramme de l'entreprise\relax }}{4}{figure.caption.3}
+\contentsline {figure}{\numberline {I.3}{\ignorespaces Fonctionnalit\'es offertes par Everwin CXM \cite {Everwin} \relax }}{5}{figure.caption.4}
+\contentsline {figure}{\numberline {I.4}{\ignorespaces architecture Dolibarr \cite {Dolibarr} \relax }}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {I.5}{\ignorespaces Ecran d'accueil de Dolibarr \cite {Dolibarr} \relax }}{7}{figure.caption.6}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Capture,analyse et sp\'ecification des besoins}{8}{chapter.2}
-\contentsline {figure}{\numberline {II.1}{\ignorespaces Diagramme de cas d'utilisation global\relax }}{11}{figure.caption.12}
+\contentsline {xchapter}{Capture,analyse et sp\'ecification des besoins}{10}{chapter.2}
+\contentsline {figure}{\numberline {II.1}{\ignorespaces Diagramme de cas d'utilisation global\relax }}{14}{figure.caption.13}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Etude conceptuelle}{15}{chapter.3}
-\contentsline {figure}{\numberline {III.1}{\ignorespaces Architecture physique\relax }}{16}{figure.caption.15}
-\contentsline {figure}{\numberline {III.2}{\ignorespaces Architecture applicative de la solution\relax }}{17}{figure.caption.16}
-\contentsline {figure}{\numberline {III.3}{\ignorespaces Diagramme de cas d'utilisation Gestion d'une demande\relax }}{19}{figure.caption.17}
-\contentsline {figure}{\numberline {III.4}{\ignorespaces Diagramme de cas d'utilisation gestion utilisateurs\relax }}{22}{figure.caption.20}
-\contentsline {figure}{\numberline {III.5}{\ignorespaces Diagramme d'utilisation du param\'etrage d'une demande\relax }}{27}{figure.caption.22}
-\contentsline {figure}{\numberline {III.6}{\ignorespaces Diagramme de cas d'utilisation exportation des donn\'ees\relax }}{28}{figure.caption.24}
-\contentsline {figure}{\numberline {III.7}{\ignorespaces Diagramme de paquetage\relax }}{29}{figure.caption.26}
-\contentsline {figure}{\numberline {III.8}{\ignorespaces Le mod\`ele du domaine\relax }}{30}{figure.caption.27}
-\contentsline {figure}{\numberline {III.9}{\ignorespaces Le mod\`ele du domaine\relax }}{31}{figure.caption.29}
-\contentsline {figure}{\numberline {III.10}{\ignorespaces Diagramme de s\'equence ajout d'une demande\relax }}{32}{figure.caption.30}
-\contentsline {figure}{\numberline {III.11}{\ignorespaces Diagramme de s\'equence suppression d'un site\relax }}{33}{figure.caption.31}
-\contentsline {figure}{\numberline {III.12}{\ignorespaces Diagramme d'activi\'e : envoie d'une notification\relax }}{34}{figure.caption.32}
+\contentsline {xchapter}{Etude conceptuelle}{17}{chapter.3}
+\contentsline {figure}{\numberline {III.1}{\ignorespaces Architecture physique\relax }}{18}{figure.caption.16}
+\contentsline {figure}{\numberline {III.2}{\ignorespaces Architecture applicative de la solution\relax }}{19}{figure.caption.17}
+\contentsline {figure}{\numberline {III.3}{\ignorespaces Diagramme de cas d'utilisation Gestion d'une demande\relax }}{21}{figure.caption.18}
+\contentsline {figure}{\numberline {III.4}{\ignorespaces Diagramme de cas d'utilisation gestion utilisateurs\relax }}{24}{figure.caption.21}
+\contentsline {figure}{\numberline {III.5}{\ignorespaces Diagramme d'utilisation du param\'etrage d'une demande\relax }}{30}{figure.caption.23}
+\contentsline {figure}{\numberline {III.6}{\ignorespaces Diagramme de cas d'utilisation exportation des donn\'ees\relax }}{31}{figure.caption.25}
+\contentsline {figure}{\numberline {III.7}{\ignorespaces Diagramme de paquetage\relax }}{32}{figure.caption.27}
+\contentsline {figure}{\numberline {III.8}{\ignorespaces Le mod\`ele du domaine\relax }}{33}{figure.caption.28}
+\contentsline {figure}{\numberline {III.9}{\ignorespaces Le mod\`ele du domaine\relax }}{34}{figure.caption.30}
+\contentsline {figure}{\numberline {III.10}{\ignorespaces Diagramme de s\'equence ajout d'une demande\relax }}{35}{figure.caption.31}
+\contentsline {figure}{\numberline {III.11}{\ignorespaces Diagramme de s\'equence suppression d'un site\relax }}{36}{figure.caption.32}
+\contentsline {figure}{\numberline {III.12}{\ignorespaces Diagramme d'activi\'e : envoie d'une notification\relax }}{37}{figure.caption.33}
 \addvspace {10\p@ }
-\contentsline {xchapter}{R\'ealisation}{35}{chapter.4}
-\contentsline {figure}{\numberline {IV.1}{\ignorespaces Commits pendant le mois de Juillet\relax }}{36}{figure.caption.35}
-\contentsline {figure}{\numberline {IV.2}{\ignorespaces Toutes les contributions\relax }}{37}{figure.caption.36}
-\contentsline {figure}{\numberline {IV.3}{\ignorespaces Disposition des Frameworks\relax }}{39}{figure.caption.37}
-\contentsline {figure}{\numberline {IV.4}{\ignorespaces Interface d'authentification\relax }}{40}{figure.caption.38}
-\contentsline {figure}{\numberline {IV.5}{\ignorespaces Diff\'erence entre deux r\^oles\relax }}{41}{figure.caption.39}
-\contentsline {figure}{\numberline {IV.6}{\ignorespaces Vue compl\`ete de l'interface d'accueil\relax }}{42}{figure.caption.40}
-\contentsline {figure}{\numberline {IV.7}{\ignorespaces Changer l'\'etat d'une demande\relax }}{43}{figure.caption.41}
-\contentsline {figure}{\numberline {IV.8}{\ignorespaces Le graphe des demandes\relax }}{43}{figure.caption.42}
+\contentsline {xchapter}{R\'ealisation}{38}{chapter.4}
+\contentsline {figure}{\numberline {IV.1}{\ignorespaces Commits pendant le mois de Juillet\relax }}{39}{figure.caption.36}
+\contentsline {figure}{\numberline {IV.2}{\ignorespaces Toutes les contributions\relax }}{40}{figure.caption.37}
+\contentsline {figure}{\numberline {IV.3}{\ignorespaces Disposition des Frameworks\relax }}{42}{figure.caption.38}
+\contentsline {figure}{\numberline {IV.4}{\ignorespaces Interface d'authentification\relax }}{43}{figure.caption.39}
+\contentsline {figure}{\numberline {IV.5}{\ignorespaces Diff\'erence entre deux r\^oles\relax }}{44}{figure.caption.40}
+\contentsline {figure}{\numberline {IV.6}{\ignorespaces Vue compl\`ete de l'interface d'accueil\relax }}{45}{figure.caption.41}
+\contentsline {figure}{\numberline {IV.7}{\ignorespaces Changer l'\'etat d'une demande\relax }}{46}{figure.caption.42}
+\contentsline {figure}{\numberline {IV.8}{\ignorespaces Le graphe des demandes\relax }}{47}{figure.caption.43}
+\contentsline {figure}{\numberline {IV.9}{\ignorespaces Formulaire de la demande (vue administrateur)\relax }}{47}{figure.caption.44}
+\contentsline {figure}{\numberline {IV.10}{\ignorespaces Pop-up affectation d'un site\relax }}{48}{figure.caption.45}
+\contentsline {figure}{\numberline {IV.11}{\ignorespaces Demande \'emise\relax }}{48}{figure.caption.46}
+\contentsline {figure}{\numberline {IV.12}{\ignorespaces Demande apr\`es traitement\relax }}{49}{figure.caption.47}
+\contentsline {figure}{\numberline {IV.13}{\ignorespaces Interface \'ecran commun\relax }}{49}{figure.caption.48}
+\contentsline {figure}{\numberline {IV.14}{\ignorespaces Interface administration des utilisateurs\relax }}{50}{figure.caption.49}
+\contentsline {figure}{\numberline {IV.15}{\ignorespaces Interface administration des demandes\relax }}{50}{figure.caption.50}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusion G\'en\'erale et Perspectives}{44}{chapter*.44}
+\contentsline {xchapter}{Conclusion G\'en\'erale et Perspectives}{51}{chapter*.52}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Annexe : Remarques Diverses}{47}{chapter*.45}
+\contentsline {xchapter}{Annexe : Remarques Diverses}{54}{chapter*.53}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Demande sous sa forme originale\relax }}{54}{figure.caption.54}

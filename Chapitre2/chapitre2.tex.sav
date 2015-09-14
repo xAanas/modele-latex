@@ -16,7 +16,7 @@
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
 
-\begin{spacing}{1.2}
+\begin{spacing}{1.5}
 %==============================================================================
 \section*{Introduction}
 Ce chapitre représente la case de départ dans notre travail. En effet, nous analysons et spécifions les besoins du projet. Ensuite, nous identifions les différents acteurs. Et enfin, nous modélisons le tout dans un diagramme de cas d'utilisation général qui sera notre file conducteur durant la prochaine phase.
@@ -73,7 +73,7 @@ des notifications aux utilisateurs à chaque évènement important comme l'ajout ou
 Dans le tableau \ref{ActScrum} nous présentons les différents acteurs participants dans ce projet :
 \begin{table}[!ht]
   \centering
-  \begin{tabular}{|l|l|l|}
+  \begin{tabular}{|l|l|p{9cm}|}
     \hline
     % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
     Rôle & Acteur & Mission \\
@@ -93,7 +93,8 @@ Il est élaboré par le product owner. Il comporte toutes les fonctionnalités du p
 Dans le tableau \ref{backlogP}, nous présentons le Backlog établi au début du projet.
 \begin{table}[!ht]
   \centering
-  \begin{tabular}{|l|l|c|}
+  \footnotesize
+  \begin{tabular}{|p{4cm}|p{10cm}|c|}
     \hline
     % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
     Nom & Description & Effort \\
@@ -170,7 +171,7 @@ Dans le tableau \ref{backlogP}, nous présentons le Backlog établi au début du pr
 \hline
     Envoyer un mail de notification & Le système doit émettre un mail aux utilisateurs à chaque nouvelle demande. & 3 \\
 \hline
- 
+
   \end{tabular}
   \caption{Backlog du produit}\label{backlogP}
 \end{table}
@@ -180,7 +181,7 @@ Pour le bon déroulement du projet, le travail sera découpé en sprint. Ces sprint
 Le tableau \ref{sprintP} présente les sprints du projet :
 \begin{table}[!ht]
   \centering
-  \begin{tabularx}{|c|l|c|}
+  \begin{tabular}{|c|l|c|}
     \hline
     % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
     Sprint & description & durée \\
@@ -209,7 +210,7 @@ Le tableau \ref{sprintP} présente les sprints du projet :
 \hline
     sprint 11 & Test et déploiement. & 1 semaine \\
     \hline
-  \end{tabularx}
+  \end{tabular}
   \caption{Les sprints du projet}\label{sprintP}
 \end{table}
 

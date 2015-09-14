@@ -73,7 +73,7 @@ des notifications aux utilisateurs à chaque évènement important comme l'ajout ou
 Dans le tableau \ref{ActScrum} nous présentons les différents acteurs participants dans ce projet :
 \begin{table}[!ht]
   \centering
-  \begin{tabular}{|l|l|p{11cm}|}
+  \begin{tabular}{|l|l|p{9cm}|}
     \hline
     % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
     Rôle & Acteur & Mission \\
@@ -94,7 +94,7 @@ Dans le tableau \ref{backlogP}, nous présentons le Backlog établi au début du pr
 \begin{table}[!ht]
   \centering
   \footnotesize
-  \begin{tabular}{|l|p{11cm}|c|}
+  \begin{tabular}{|p{4cm}|p{10cm}|c|}
     \hline
     % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
     Nom & Description & Effort \\

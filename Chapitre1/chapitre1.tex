@@ -13,24 +13,49 @@
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
 
-\begin{spacing}{1.2}
+\begin{spacing}{1.5}
 %==============================================================================
 
 \section*{Introduction}
-Une étude théorique \cite{YOUSFI2015} peut contenir l'une et/ou l'autre de ces deux parties :
-\section{Cadre du projet}
-C'est une étude assez détaillée sur ce qui existe sur le marché ou dans la littérature (d'où
-le terme état de l'art), qui permet de répondre à la problématique. L'idée ici est de faire
-un comparatif entre les solutions existantes, mais surtout d'analyser le résultat de cette
-comparaison et de dire pourquoi ne sont-elles pas satisfaisantes pour répondre à votre
-problématique.
-\begin{figure}[!ht]\centering
-\includegraphics[scale=0.9]{art.jpg}
-\caption{État de l'art}
-\label{fig:fig1}
-\end{figure}
+
+\section{Présentation de l'organisme d'accueil}
+\subsection{L'entreprise "UrbaProd"}
+UrbaProd est une société de conseil en organisation par l'espace spécialisée dans le secteur d'aménagement des espaces de travail.
+Filiale de la société mère Génie des Lieux, depuis 2010, UrbaProd  participe à l'aménagement et le réaménagement des espaces de travail pour des grands comptes répartis essentiellement en France.
+UrbaProd est composée essentiellement de deux pôles : le pôle "3D"  et le pôle "space planning". Nous illustrons dans la figure \ref{organigrammeImg} l'organigramme d'UrbaProd.  Notre projet  a été effectué au sein du pôle  "IT" qui est nouvellement créé afin de mettre en place une solution de gestion de production Offshore.
 \section{Problématique}
 Aujourd'hui, nous avons de plus en plus de demandes à traiter, sans avoir un support informatique pour les gérer. Ce n'est pas très aisé de gérer l'historique de la clientéle d'une entreprise. De plus, lors des différentes intéractions avec la clientéle, et en particulier lors du partage d'informations, l'outils utilisé est le mail. Cependant, cela vire au désordre, i.e. messages dissparus, méthodes de classements qui différent d'un collaborateur à un autre, absence de suivi. Et comme la relation entre collaborateurs est la priorité stratégique de la société, ce point est à travailler d'urgence.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.8]{organigramme.png}
+\caption{Organigramme de l'entreprise}
+\label{organigrammeImg}
+\end{figure} 
+
+\subsection{Domaine d'expertise}
+Spécialisée dans la définition, la conception et l'appropriation des espaces. UrbaProd est présente tout  au long du cycle de vie du processus d'optimisation et de conception des lieux afin d'améliorer la disposition  des collaborateurs :
+\begin{itemize}
+                                 \item En amont pour le recueil des besoins et le cadrage stratégique.
+                                 \item Puis pour la conception et la réalisation des plans des espaces.
+                                 \item Enfin pour la gestion et le pilotage de mobilité et l'ingénierie de transfert.
+                               \end{itemize}
+Les missions d' "UrbaProd" incluent :
+\begin{itemize}
+  \item Audit et programmation - Concept et charte d'aménagement - Etudes et space planning.
+  \item Prospective - Management de projet - Conduite du changement.
+  \item Architecture d'intérieur - Prescription mobilier - Conduite de travaux - OPC.
+  \item Pilotage et gestion de la mobilité - Ingénierie de transfert.
+  \item Solutions numériques de gestion et visualisation des espaces.
+\end{itemize}
+UrbaProd travaille et accompagne les processus d'aménagements des grands comptes en France et en Europe, à savoir : EDF, Thales, Cartier, Danone, INPI, l'Oréal, Technicolor, Hachette Livre dont nous retrouvons les logos dans la figure \ref{refenrenceImg} :
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.8]{reference.png}
+\caption{Organigramme de l'entreprise}
+\label{refenrenceImg}
+\end{figure}
 
 \section{Solutions existantes}
 Il existe plusieurs solutions de gestion de relation client sur le marché. En examinant ces applications, nous citons les plus importantes :
@@ -43,14 +68,14 @@ CRM de Fitnet Manager : Fitnet Avant-vente est l'outil de gestion commerciale de
   \item
   Everwin CXM : c'est une solution qui vise les cabinets d'architectures, elle couvre plusieurs fonctionnalités citant à titre d'exemple :
   \begin{itemize}
-    \item 
+    \item
     Base de données de la société et des contacts avec gestion automatisée de la téléprospection.
-    \item 
+    \item
     Gestion des actions commerciales et des campagnes marketing.
-    \item 
+    \item
     Agenda partagé et planning général des collaborateurs.
   \end{itemize}
-   
+
 \end{itemize}
 Cette solution est fondée sur une technologie Client/Serveur sous windows avec une base de données SQL Server.
 il est disponible en mode SaaS ou licence et peut être couplé aux ERP ERPEverwin SX et Everwin GX \cite{Everwin} .   La figure \ref{everwinImg} illustre l'ensemble des fonctionnalités couvertes par Everwin CXM.

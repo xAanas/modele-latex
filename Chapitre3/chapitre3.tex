@@ -15,11 +15,11 @@
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
 
-\begin{spacing}{1.2}
+\begin{spacing}{1.5}
 
 %==============================================================================
 \section*{Introduction}
-phrase introductive
+Cette partie est très importante dans le cycle de vie du projet. Toute la base du projet est construite ici en théorique, après, il ne reste que la mise en oeuvre.
 
 \section{Architecture physique}
 Notre application est une application client/serveur qui dispose d'une architecture 3 tiers. C'est l'architecture la plus répandue dans les application web, dans laquelle la logique métier, l'accès et le stockage de données et l'interface utilisateur sont maintenus chacune dans un module indépendant et pouvant être répartis sur des plates-formes différentes ou même regroupés sur une seule machine. La figure \ref{archiTier} donne un aperçu sur cette architecture.
@@ -269,7 +269,7 @@ La figure \ref{useCaseParametre} montre ces différents cas d'activités.
 
 \subsection{Module exportation des données}
 Ce module permet en fait plusieurs types d'exportation.
-Tout d'abord, il permet l'extraction de la demande sous sa forme originale adaptée avant le développement de notre application (comme indiqué dans l'annexe 1).
+Tout d'abord, il permet l'extraction de la demande sous sa forme originale adaptée avant le développement de notre application (comme indiqué dans l'annexe \ref{demOrgForm}).
 Pour le suivi du travail ou un contrôle quotidien, nous pouvons exporter les données dans des fichiers Excel.
 Vue la nature des autres activités de l'entreprise, nous aurons besoins aussi d'autre types de flux d'information i.e. JSON et XML.
 La figure \ref{useCaseExporter} met en évidence ces cas d'utilisation.
@@ -438,7 +438,7 @@ La figure \ref{envNotAct} met en exergue le processus de l'envoie d'une notifica
 \end{figure} 
 
 \section*{Conclusion}
-il manque la conclusion.
+Dans ce chapitre, nous avons préparer nos packages, nos diagrammes, des séquences d'utilisation, donc tout ce qu'on a besoin pour l'élaboration de l'application. Dans le chapitre suivant, nous allons entrer dans le vive du sujet et réaliser le projet.
 
 %==============================================================================
 \end{spacing}

@@ -161,7 +161,59 @@ Les composants principaux de cette file d'actualité sont les demandes. Les colla
 \label{demandeFormImg}
 \end{figure}
 
-  \item 3
+La catégorie d'une demande est par défaut de type Génie des lieux (GDL), seul l'administrateur peut changer la catégorie.
+Au cour de la création d'une demande, l'utilisateur, à travers des pop-up, peut ajouter au fur et à mesure des clients et leurs affecter des sites sans besoins de recharger le formulaire de la demande illustré par la figure \ref{siteFormImg}.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.6]{addSite.png}
+\caption{Pop-up affectation d'un site}
+\label{siteFormImg}
+\end{figure}
+
+La demande est émise dans la file d'actualité comme introduit par la Figure \ref{demEmisImg}.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.6]{demandeEmise.png}
+\caption{Demande émise}
+\label{demEmisImg}
+\end{figure}
+
+Une fois la demande émise, les collaborateurs à Tunis peuvent l'aimer, la commenter, changer son état, télécharger les fichiers joints etc.
+Dans la Figure \ref{demEtCommImg} nous illustrons une demande après plusieurs traitements.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.6]{accueilCommentaire.png}
+\caption{Demande après traitement}
+\label{demEtCommImg}
+\end{figure}
+
+  \item Interface écran commun. \\
+  Elle est illustré par la figure \ref{ecranImg}.C'est une interface affichée dans un grand écran devant tous les collaborateurs. Elle donne des informations spécifiques afin d'aider dans le suivi des demandes comme l'arrivée d'un nouveau commentaire ou l'affectation d'un nouveau fichier.
+  
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.6]{ecranCommun.png}
+\caption{Interface écran commun}
+\label{ecranImg}
+\end{figure}
+
+Cette interface permet à l’administrateur de créer une nouvelle demande ainsi que d’exporter la liste de toutes les demandes dans le système.
+
+  \item Administration des utilisateurs. \\
+  Elle permet à l’administrateur toutes les manipulations sur les utilisateurs comme la mise à jour, l’activation ou l’affectation d’un nouveau rôle. Elle est représenté par la figure \ref{userAdmImg}.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.6]{adminUsers.png}
+\caption{Interface administration des utilisateurs}
+\label{userAdmImg}
+\end{figure}  
+ 
+\item Administration des demandes. \\
+  
 \end{itemize}
 
 
