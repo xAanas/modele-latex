@@ -8,15 +8,18 @@
 \url{http://www.dolibarr.fr/}.
 \newblock [En ligne; consulté le 22-Juin-2015].
 
-\bibitem{Latex}
-{\sc Mr. Latex}.
-\newblock {Débuter avec Latex}.
-\newblock \url{www.latex.com},  (2008).
-\newblock [En ligne; consulté le 19-Juillet-2008].
+\bibitem{UML}
+{\sc NeilPitman Dan~Pilone}.
+\newblock {\em UML 2.0 in Nutshell}.
+\newblock  (publié le Juin 2005).
 
 \bibitem{Fitnet}
 \url{http://www.fitnetmanager.com/crm-avant-vente}.
 \newblock [En ligne; consulté le 21-Juin-2015].
+
+\bibitem{AgManifesto}
+\url{http://www.agilemanifesto.org/iso/en/principles.html}.
+\newblock [En ligne; consulté le 14-Septembre-2015].
 
 \bibitem{RUP}
 {\sc Phillipe Kruchten}.
@@ -46,6 +49,10 @@
 \url{http://blocnotes.iergo.fr/concevoir/les-criteres-heuristiques-de-bastien-et-scapin/}.
 \newblock [En ligne; consulté le 14-Septembre-2015].
 
+\bibitem{Dbal}
+\url{https://packagist.org/}.
+\newblock [En ligne; consulté le 13-Septembre-2015].
+
 \bibitem{Package}
 \url{https://fr.wikipedia.org/wiki/Paquet_(logiciel)}.
 \newblock [En ligne; consulté le 13-Septembre-2015].
@@ -65,10 +72,6 @@
 \bibitem{cookBook}
 \url{http://symfony.com/fr/doc/current/cookbook/index.html}.
 \newblock [En ligne; consulté le 31-Août-2015].
-
-\bibitem{Dbal}
-\url{https://packagist.org/}.
-\newblock [En ligne; consulté le 13-Septembre-2015].
 
 \bibitem{Bundles}
 \url{http://symfony.com/fr/doc/current/cookbook/doctrine/dbal.html}.

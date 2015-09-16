@@ -1,5 +1,5 @@
 \setcounter{chapter}{1}
-\chapter{Capture,analyse et spécification des besoins}
+\chapter{Capture, analyse et spécification des besoins}
 \minitoc %insert la minitoc
 \graphicspath{{Chapitre2/figures/}}
 
@@ -22,21 +22,20 @@
 Ce chapitre représente la case de départ dans notre travail. En effet, nous analysons et spécifions les besoins du projet. Ensuite, nous identifions les différents acteurs. Et enfin, nous modélisons le tout dans un diagramme de cas d'utilisation général qui sera notre file conducteur durant la prochaine phase.
 
 \section{Étude de l'existant}
-	Pour soumettre une demande, nos collaborateurs chez Génie des Lieux (GDL) à Paris ont quelques étape à suivre :
+	Pour soumettre une demande, nos collaborateurs chez Génie des Lieux (GDL) à Paris, ont quelques étape à suivre :
 \begin{itemize}
   \item Téléchargement des fichiers.
-Le téléchargement des fichiers Autocad avec extension DWG ou les fichiers 3DS sur lesquels nos collaborateurs à EllouzeAndPartners à Tunis vont travailler. Ce téléchargement s'effectue sur notre plate-forme privée qui nous génère automatiquement un lien pour le téléchargement de ces fichiers ce qui nous mène à l'étape suivante.
+Le téléchargement des fichiers Autocad avec extension DWG ou les fichiers 3DS sur lesquels nos collaborateurs à Urbaprod à Tunis vont travailler. Ce téléchargement s'effectue sur notre plate-forme privée qui nous génère automatiquement un lien pour le téléchargement de ces fichiers ce qui nous mène à l'étape suivante.
   \item Soumission du formulaire de demande.
 Ensuite, les collaborateurs chez GDL remplissent un formulaire Excel pour détailler les missions à traiter dans cette demande. Les liens de téléchargement des fichiers téléchargés sont soumis dans ce formulaire. Ce dernier est soumis via un mail.
   \item Réponse des collaborateurs à tunis
-L'équipe d'EllouzeAndPartners répond à cette demande par un autre formulaire Excel prédéfini.
+L'équipe d'Urbaprod répond à cette demande par un autre formulaire Excel prédéfini.
   \item Le suivi de la demande.
 Ca se fait à travers l'Email, Skype ou par téléphone.
 \end{itemize}
 
 \section{Critique de l'existant }
-Cette solution semble satisfaisante, en effet, elle répond au besoins mais elle est répartie sur plusieurs plates-formes donc notre travail est un peu éparpillé. En même temps cette solution est trop manuelle, d'où la grande perte du temps à chaque fois que nous voulons faire une tâche. En plus, il y a le risque de la faille humaine, e.g. tomber dans l'oublie et ne pas faire une copie de sauvegarde.
-Donc l'automatisation de ces procédures et leur centralisation est une nécessité. 
+La procédure de travail de UrbaProd semble satisfaisante. En effet, elle répond aux besoins mais elle est répartie sur plusieurs plates-formes ce qui implique l'éparpillement du travail. En même temps, cette solution est trop manuelle, d'où la grande perte de temps à chaque nouvelle tâche. D'autre part, il y a le risque de la faille humaine, e.g. tomber dans l'oublie et ne pas faire une copie de sauvegarde. Ceci implique que l'automatisation de ces procédures et leur centralisation devient une nécessité.
 
 
 
@@ -62,7 +61,17 @@ Dans cette section, nous introduisons les différents acteurs ainsi que les besoi
 \end{itemize}
 
 \subsection{Les besoins non fonctionnels}
-des notifications aux utilisateurs à chaque évènement important comme l'ajout ou la modification d'une demande ou l'ajout d'un nouveau commentaire.
+Les besoins ne s'arrête pas au niveau fonctionnel mais ils tendent vers des exigences qui contribuent à une meilleure qualité de l'application.
+Les plus importantes sont : 
+\begin{itemize}
+  \item Elle doit être robuste en terme de scalabilité.
+  \item Au niveau de sécurité, elle doit être invulnérable aux différentes attaques web puisqu'elle sera hébergée sur le web.
+  \item Un autre aspect de la sécurité est le contrôle d'accessibilité, il doit être stricte aux différents acteurs. Nous gardons aussi les traces de chaque modification sur les demandes.
+  \item L'interface Graphique et le traitement Javascript doit être compatible avec les navigateurs Google Chrome et Mozilla Firefox.
+  \item Elle doit se dotée d'une interface conviviale et moderne pouvant être exploitée par un simple utilisateur puisque la plupart d'eux sont des architectes.
+  \item L'interface doit répondre aux bonnes pratiques de l'IHM notamment la gestion des erreurs et l'accès aux différents menus \cite{IHM}.
+\end{itemize}
+
 
 \subsection{Planification du projet}
 \subsubsection{Acteurs du projet}
@@ -212,7 +221,7 @@ Le tableau \ref{sprintP} présente les sprints du projet :
 
 A la fin de chaque sprint, nous aurons un release qui sera examiné par le product owner afin de planifier les modifications et les évolutions à effectuer dans le sprint suivant.
 
-\subsection{Spécification des besoins diagramme de cas d'utilisation global}
+\subsection{Spécification des besoins : diagramme de cas d'utilisation global}
 La figure \ref{useCaseGlobal} représente le diagramme de cas d'utilisation global de l'application et les différents acteurs qui interfèrent :
 
 \begin{figure}[!ht]\centering

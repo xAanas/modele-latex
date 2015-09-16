@@ -12,15 +12,14 @@
 \begin{spacing}{1.5}
 %==============================================================================
 
-C'est l'une des parties les plus importantes et pourtant les plus négligées
-du rapport. Ce qu'on \underline{ne veut pas voir} ici, c'est combien ce stage vous a été bénéfique, comment il vous a appris à vous intégrer, à connaître le monde du travail, etc.\\
-Franchement, personne n'en a rien à faire, du moins dans cette partie. Pour cela, vous
-avez les remerciements et les dédicaces, vous pourrez vous y exprimer à souhait.\\
-La conclusion, c'est très simple : c'est d'abord le résumé de ce que vous avez raconté
-dans le rapport : vous reprenez votre contribution, en y ajoutant ici les outils que vous
-avez utilisé, votre manière de procéder. Vous pouvez même mettre les difficultés
-rencontrées. En deuxième lieu, on y met les perspectives du travail : ce qu'on pourrait
-ajouter à votre application, comment on pourrait l'améliorer.
+Dans une entreprise, la gestion des commandes reçues est une étape primordiale dans le processus, de conception et/ou de production. C'est l'étape au cours de laquelle l'écoute du client est importante afin de bien comprendre ses besoins et de tenir compte de ses enviest. Grâce à l'informatique, nous avons  pu répondre à cette problématique en utilisant le Customer Relationship Manager (CRM) qui est définie comme étant l'ensemble des outils et techniques permettant de traiter et d'analyser toutes les informations relatives aux clients dans le but de les fidéliser en leur offrant les meilleurs services
+
+Mais, comme toute solution, le CRM souffre d'un ensemble d'inconvénients. Parmi eux, surgit le problème de la facilité d'utilisation surtout pour les non-connaisseurs, comme les architectes. Nous avons donc pensé à une adaptation du concept du CRM aux besoins d'un architecte qui est une personne peu connaisseuse en informatique.
+Dans ce cadre, nous avons effectué ce stage de fin d'étude dans la société « UrbaProd ». Nous étions chargé de concevoir une plateforme de CRM qui permet, à la fois, de gérer les commandes des clients en un laps de temps raisonnable, et de sauvegarder l'historique des différentes commandes passées par le client. Notre plate-forme devra en plus être facile à utiliser par tous les utilisateurs, que ce soient des clients ou des architectes.
+Afin d'atteindre ces objectifs, nous avons utilisé le "Framework" Symfony2. Il assure une grande performance et une facilité d'extensibilité, nous avons exploité les composantes qu'il offre comme la gestion de sécurité pour l'authentification et les droits d'accès.
+A la fin de ce travail, nous avons répondu aux besoins de la société à travers l'ensemble des fonctionnalités fournies par notre solution, à savoir, le module de gestion des demandes, le module de notification et le module de gestion des clients.
+Mais cela n'empêche que nous avons connu quelques difficultés pendant la période de la collecte des besoins et des difficultés pendant la période de l'implémentation de la solution puisque l'entreprise ne comprend pas dans son effectif des spécialistes dans ce domaine.
+L'utilisation de Symfony2 facilitera ensuite l'intégration des améliorations envisagés par la société comme la notification par sms afin de garantir la visibilité de l'information par tous les collaborateurs. Même si nous avons utilisé des interfaces responsives, nous avons proposé d'implémenter une application mobile qui sera plus adéquate pour les smartphones.
 
 %==============================================================================
 \end{spacing} 

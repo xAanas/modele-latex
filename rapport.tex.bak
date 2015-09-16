@@ -22,6 +22,7 @@
 \usepackage{Classes/eurosans} %%pour le symbole \euro
 \usepackage{epic,eepic}
 \usepackage{soul}
+\usepackage{pifont}
 \usepackage[nottoc]{tocbibind} % tables des figures, des matieres et autres dans la TOC
 \usepackage{fancybox}
 \usepackage[leftcaption]{sidecap}

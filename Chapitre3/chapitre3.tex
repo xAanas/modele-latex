@@ -1,6 +1,6 @@
 
 \setcounter{chapter}{2}
-\chapter{Etude conceptuelle}
+\chapter{~Etude conceptuelle}
 \minitoc %insert la minitoc
 \graphicspath{{Chapitre3/figures/}}
 
@@ -51,19 +51,19 @@ Maintenant, nous présentons l'architecture applicative de notre application, sa 
 \end{figure}
 
 \begin{itemize}
-  \item[\ding{108}] La couche présentation : elle représente le contact de l'utilisateur avec l'application, elle lui permet le pilotage et la configuration de l'application. Elle invoque le service métier adéquat à la requête du client et lui retourne le résultat. Cette couche est composée de :
+  \item[\ding{108}] \textbf{La couche présentation} : elle représente le contact de l'utilisateur avec l'application, elle lui permet le pilotage et la configuration de l'application. Elle invoque le service métier adéquat à la requête du client et lui retourne le résultat. Cette couche est composée de :
       \begin{itemize}
         \item Contrôleur frontal : il représente le point d'entrée de notre application.
-        \item Contrôleurs : ils décident selon la requête du client et les configuration du système, quel service sera invoqué et quelle vue sera rendu, autrement dit, ils orchestrent les différents éléments.
+        \item Contrôleurs : ils décident selon la requête du client et les configuration du système, quel service sera invoqué et quelle vue sera rendue, autrement dit, ils orchestrent les différents éléments.
         \item Vues : le résultat de la requête de l'utilisateur est récupéré et traduit en HTML et Javascript puis renvoyé au client sous forme de vue selon la charte graphique utilisée dans l'application.
       \end{itemize}
-  \item[\ding{108}] La couche métier : c'est l'élément qui englobe la logique métier et ses traitements spécifiques. Elle est invoquée via les contrôleurs pour traiter les requêtes client.
-  \item[\ding{108}] La couche accès au base de données : cette couche assure la communication avec la source de données afin d'assurer la séparation entre la logique métier et la logique accès au données.
+  \item[\ding{108}] \textbf{La couche métier} : c'est l'élément qui englobe la logique métier et ses traitements spécifiques. Elle est invoquée via les contrôleurs pour traiter les requêtes client.
+  \item[\ding{108}] \textbf{La couche accès à la base de données} : cette couche assure la communication avec la source de données afin d'assurer la séparation entre la logique métier et la logique accès au données.
 	  Elle est composée de :
         \begin{itemize}
           \item Managers : Ils assurent la persistance des données dans la base de données.
           \item Repositories : Ils assurent l'extraction des données de la base de données.
-          \item Database Abstract Layer DBAL : Elle offre un accès facile et rapide à la base de données [W5]. Elle procure plusieurs service  : l'insertion, la mise à jour, la suppresion et la lecture des données.
+          \item Database Abstract Layer DBAL : Elle offre un accès facile et rapide à la base de données \cite{Dbal}. Elle procure plusieurs service  : l'insertion, la mise à jour, la suppresion et la lecture des données.
 Elle est caractérisée par un Object Relation Mapping (ORM) qui traduit  les tables de la base en objets facilement manipulable.
         \end{itemize}
 \end{itemize}
@@ -73,8 +73,8 @@ Dans les paragraphes précédents, nous avons présenté les modèles architecturals 
 
 \section{Raffinement des diagrammes des cas d'utilisations}
 Dans cette partie, nous décortiquons les cas d'utilisation vus dans le chapitre précédent d'une façon plus détaillée afin de clarifier le fonctionnement de notre système.
-\subsection{module gestion de demande}
-Ce module regroupe toutes les rubriques de gestion d'une demande.
+\subsection{module gestion des demandes}
+Ce module regroupe toutes les rubriques de la gestion d'une demande.
 La création des demandes est conduite par les collaborateurs en France. Les collaborateurs à Tunis auront une visibilité sur les détails du travail à faire ainsi que sur les interactions qu'ils peuvent effectuer avec la demande. La figure \ref{useCaseGestionDemande} montre le diagramme de cas d'utilisation de gestion d'une demande.
 
 \begin{figure}[!ht]\centering
@@ -84,7 +84,7 @@ La création des demandes est conduite par les collaborateurs en France. Les coll
 \end{figure}
 \begin{itemize}
   \item Description du cas d'utilisation : ajout d'une demande \\
-  Le tableau \ref{ajoutDemande}. décrit le cas d'utilisation "ajout d'une demande".
+  Le tableau \ref{ajoutDemandeTab}. décrit le cas d'utilisation "ajout d'une demande".
 
 \begin{table}[!ht]
 	\centering
@@ -119,7 +119,7 @@ Acteur		&   Collaborateur FR.   \\
   \\
 			\hline
 	\end{tabular}
-	\label{ajoutDemande}
+	\label{ajoutDemandeTab}
 	\caption{Ajout d'une demande}
 \end{table}
 
@@ -210,13 +210,13 @@ Le figure \ref{useCaseUser} illustre le diagramme de cas d'utilisation de gestio
 \end{table}
 
 
-\subsection{Module gestion des paramètres de la demandes.}
+\subsection{Module gestion des paramètres de la demande}
 Cette partie regroupe les différentes fonctionnalités qui servent à paramétrer les demandes. Vue que les missions effectuées dans l'entreprise sont connues d'avance, c'est le directeur de l'entreprise qui est chargé de les prédéfinir. Les clients et leurs sites sont définis au préalable comme ils peuvent être définis lors de la soumission d'une nouvelle demande.
 La figure \ref{useCaseParametre} montre ces différents cas d'activités.
 
 \begin{figure}[!ht]\centering
 \includegraphics[scale=1]{GestionParametreFinal.png}
-\caption{Diagramme d'utilisation du paramétrage d'une demande}
+\caption{Diagramme de cas d'utilisation du paramétrage d'une demande}
 \label{useCaseParametre}
 \end{figure}
 
@@ -317,20 +317,20 @@ La figure \ref{paquetageDiagram} présente le diagramme de packetages.
 \label{paquetageDiagram}
 \end{figure}
 
-En fait, ce diagramme met en évidence le modèle Model View Controller (MVC) \cite{MVC}, à travers les packages Views, Controller, Repository, Manager et Entity.
-Entity : il regroupe les entités de notre application.
-Manager : il regroupe les éléments gérant la persistance dans la base de données.
-Repository : il regroupe les éléments responsable de l'extraction des données de la base de données.
-Views : il regroupe les vues de notre application. Il représente le contacte directe avec l'utilisateur.
-Controller : il regroupe les contrôleurs de l'application. Ils jouent le rôle de chef d'orchestre en appellant le modèle et en le redirigent vers la vue convenue.
-Il existe aussi d'autre packages :
-Service : il regroupe les services liés à notre application.
-Form : il regroupe les formulaires de l'application modélisés par des classes.
-Config : il contient le routage de l'application et les services.
+En fait, ce diagramme met en évidence le modèle Model View Controller (MVC) \cite{MVC}, à travers les packages Views, Controller, Repository, Manager et Entity.\\
+\textbf{Entity} : il regroupe les entités de notre application.\\
+\textbf{Manager} : il regroupe les éléments gérant la persistance dans la base de données.\\
+\textbf{Repository} : il regroupe les éléments responsable de l'extraction des données de la base de données.\\
+\textbf{Views} : il regroupe les vues de notre application. Il représente le contacte directe avec l'utilisateur.\\
+\textbf{Controller} : il regroupe les contrôleurs de l'application. Ils jouent le rôle de chef d'orchestre en appellant le modèle et en le redirigent vers la vue convenue.\\
+Il existe aussi d'autre packages :\\
+\textbf{Service} : il regroupe les services liés à notre application.\\
+\textbf{Form} : il regroupe les formulaires de l'application modélisés par des classes.\\
+\textbf{Config} : il contient le routage de l'application et les services.\\
 
 \subsection{Diagramme de classes}
 \begin{itemize}
-  \item[\ding{108}] Le modèle du domaine.\\
+  \item[\ding{108}] \textbf{Le modèle du domaine}\\
   La figure \ref{ModlDmnClass} illustre le modèle du domaine de l'application web avec les différentes dépendances.
 
 \begin{figure}[!ht]
@@ -342,7 +342,7 @@ Config : il contient le routage de l'application et les services.
 
 Ce sont les différentes entités qui constituent le modèle du domaines.
 Elles représentent la façon avec laquelle les données sont stockés dans la base.	
-Dans le tableau 3.6, nous représentons le rôle de chacune de ces entités.
+Dans le tableau \ref{ctrlClassTab}, nous représentons le rôle de chacune de ces entités.
 
 \begin{table}[!ht]
   \centering
@@ -357,13 +357,13 @@ Dans le tableau 3.6, nous représentons le rôle de chacune de ces entités.
     \hline
     Commentaire & Ce sont les différents impressions, interrogations, ou déclarations que laissent les utilisateurs à propos d'une demande. Ils peuvent être accompagnés par des photos. \\
     \hline
-    Fichier & Il peut être un fichier attaché à une demande, une image dans commentaire ou l'image d'un utilisateur. \\
+    Fichier & Il peut être un fichier attaché à une demande, une image dans un commentaire ou l'image d'un utilisateur. \\
     \hline
     Notification & C'est un signal envoyé au utilisateur pour leur notifier d'un nouvel événement. \\
     \hline
     Jaime & Ceux sont les impressions des collaborateurs à propos d'une demande. Soit ils l'aiment soit ils ne l'aiment pas. \\
     \hline
-    Catégorie & La catégorie d'une demande sert dans la facturation. \\
+    Catégorie & La catégorie d'une demande sert à la facturation. \\
     \hline
     Mission & C'est une tâche que nous pouvons effectuer dans notre entreprise. \\
     \hline
@@ -375,23 +375,23 @@ Dans le tableau 3.6, nous représentons le rôle de chacune de ces entités.
   \caption{Descriptif des entités de l'application}\label{entityTab}
 \end{table}
 
- \item[\ding{108}] Diagramme de classe des contrôleurs.\\
- La figure \ref{ctrlClass} montre le diagramme de classe des contrôleurs.
+ \item[\ding{108}] \textbf{Diagramme de classe des contrôleurs}\\
+ La figure \ref{ctrlClass} illustre le diagramme de classe des contrôleurs.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.5]{controlerClass.png}
-\caption{Le modèle du domaine}
-\label{ctrlClass}
+\caption{Diagramme de classe des contrôleurs}
+\label{ctrlClassTab}
 \end{figure}
 
  Les contrôleurs sont invoqués selon les routes, chaque route pointe vers une seule méthode d'un contrôleur bien spécifique. Donc une seule route ne peut pas invoquer plusieurs actions simultanément.
 \end{itemize}
 
-\section{Diagramme comportementaux}
+\section{Diagrammes comportementaux}
 \subsection{Diagrammes de séquences}
 \begin{itemize}
-  \item[\ding{108}] Diagramme de séquence du cas : ajouter une demande. \\
+  \item[\ding{108}] \textbf{Diagramme de séquence du cas : ajouter une demande} \\
   Dans la figure \ref{ajouDemSeq}, nous présentons la création d'une demande à travers les principales interactions entre les différents éléments de l'application.
 L'exemple traité est le cas d'un collaborateur qui crée une demande avec des données correctes.
 
@@ -400,21 +400,21 @@ L'exemple traité est le cas d'un collaborateur qui crée une demande avec des don
 \includegraphics[scale=0.5]{demandeCreationFinal.png}
 \caption{~Diagramme de séquence ajout d'une demande}
 \label{ajouDemSeq}
-\end{figure} 
-  
+\end{figure}
+
   Le collaborateur doit remplir tous les champs obligatoires pour que la demande soit correcte. Dans le cas de la soumission avec un champ vide, l'erreur s'affiche près de ce champs. Dans le cas du contournement du vérifieur frontal du formulaire, nous captons l'erreur depuis la base de données et elle est affichée de nouveau dans le formulaire de création.
 Il y a plusieurs autres interactions que nous voulons préciser lors de l'envoie d'une requête, notamment le point d'entrée, à savoir, notre contrôleur frontal, le système de routage et le noyau de SF2.
 Lors de la réponse, DemandeController invoque le moteur de vue TWIG pour l'affichage de la demande dans l'accueil.
-  
-  \item[\ding{108}] Diagramme de séquence du cas : suppression d'un site
+
+  \item[\ding{108}] \textbf{Diagramme de séquence du cas : suppression d'un site} \\
   La figure \ref{suppSiteSeq} illustre le cas du suppression d'un site.
- 
+
  \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.5]{supressionSiteFinal.png}
 \caption{~Diagramme de séquence suppression d'un site}
 \label{suppSiteSeq}
-\end{figure} 
+\end{figure}
 
 Afin de supprimer un site, il faut d'abord vérifier s'il est entrain d'être traité par une demande. Sinon nous pouvons le supprimer sans problème et le système nous affiche la nouvelle liste sans le site supprimé.
 Le SiteRepository  est le responsable de la vérification de l'existence du site dans une demande et de nous rendre la liste des sites de la base de données. Le SiteManager nous permet de supprimer le site après cette vérification.
@@ -428,12 +428,12 @@ La figure \ref{envNotAct} met en exergue le processus de l'envoie d'une notifica
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.7]{enoyerNotificationFinal.png}
-\caption{~Diagramme d'activié : envoie d'une notification}
+\caption{~Diagramme d'activité envoie d'une notification}
 \label{envNotAct}
-\end{figure} 
+\end{figure}
 
 \section*{Conclusion}
-Dans ce chapitre, nous avons préparer nos packages, nos diagrammes, des séquences d'utilisation, donc tout ce qu'on a besoin pour l'élaboration de l'application. Dans le chapitre suivant, nous allons entrer dans le vive du sujet et réaliser le projet.
+Dans ce chapitre, nous avons préparer nos packages, nos diagrammes, nos séquences d'utilisation, donc tout ce qu'on a besoin pour l'élaboration de l'application. Dans le chapitre suivant, nous allons entrer dans le vive du sujet et réaliser le projet.
 
 %==============================================================================
 \end{spacing}

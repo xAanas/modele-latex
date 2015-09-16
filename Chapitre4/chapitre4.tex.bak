@@ -28,7 +28,7 @@ Cette section met l'accent sur les logiciels utilisés durant ce travail. Puis no
 \subsection{Environnements de travail}
 Les principaux logiciels utilisés sont :
 \begin{itemize}
-  \item Netbeans 8.0.2 : c'est un environnement de développement intégré (IDE)  qui supporte plusieurs langage e.g., php, java, c.
+  \item Netbeans 8.0.2 : c'est un environnement de développement intégré (IDE)  qui supporte plusieurs langages e.g., php, java, c.
 C'est un produit oracle qui est maintenu à jour pour supporter les
 derniers technologies et framework les plus utilisés \cite{Netbeans}.
   \item Microsoft Office : World 2013 pour la rédaction du cahier de charge et Excel 2013 pour l'exportation des différents informations dans notre application.
@@ -58,7 +58,7 @@ La figure \ref{commitImg} et \ref{contributionImg} présentent l'interface du Git
 \subsection{Technologies}
 Durant notre travail, plusieurs choix technique ont été faits. Dans ce qui suit, nous illustrons les plus importants :\\
 \begin{itemize}
-  \item Le Framework Symfony2.\\
+  \item \textbf{Le Framework Symfony2.}\\
 	Une exigence du client dès le début du projet, était de travailler avec le langage PHP sur une base de données MySQL.
 L'idée du client était de travailler avec du PHP natif étant donnée qu'un Framework n'est pas indispensable pour le développement d'une application Web mais après l'élaboration du cahier de charge et vue le volume du travail demandé et la nature des fonctionnalités, il serait impossible de terminer le projet dans les délais. Le recourt à un Framework PHP devient indispensable. Ses bénéfices ne se limitent pas au gain énorme du temps que nous aurions mais aussi de la structuration du projet. Nous aurons un cadre de travail conforme au règles du métier qui nous fournira un code maintenable, évolutif et des librairies réutilisables facilitant plusieurs tâches.
 Il nous permet donc d'éviter les anti-pattern comme don't repeat yourself (DIE), qui consiste à ne pas réinventer la roue et mettre en oeuvre des composants existants.
@@ -67,24 +67,24 @@ Vue que Laravel est encore nouveau et immature, le choix s'est limité entre ZF2 
 Ces deux Framework sont matures et stables. Ils adaptent une architecture similaire, la seule différence frappante entre ses deux leaders est la richesse de la documentation qui a joué en faveur du SF2 et surtout sa communauté très active \cite{Sf2vsZf2}.
 En effet, avec le Cookbook symfony2 \cite{cookBook} et la grande variété des tutoriels ça devient facile de gérer ses erreurs et répondre à nos besoins.
 D'autre part, SF2 est doté de plusieurs outils tels que Doctrine2 qui est l'ORM de SF2, il offre plusieurs fonctionnalités facilitant la manipulation de la base de données et communique directement avec la DBAL \cite{Dbal}. Le moteur de template TWIG qui nous garantit un code net et propre séparant le code php du code html et Javascript.
-  \item Composer.\\
+  \item \textbf{Composer.}\\
 	C'est le gestionnaire de dépendance dédié au PHP. Il facilite l'import des bundles afin de les réutiliser et permet également de maintenir notre application à jour à travers un simple update (semblable au MAVEN pour le langage Java).
-  \item Bundles.\\
+  \item \textbf{Bundles.}\\
 	Ce sont des modules développés par la communauté Symfony pour éviter de réinventer la roue. En effet, leur intégration est facile grâce au Composer qu'on vient de définir dans le paragraphe précédant et permettent de gagner énormément de temps \cite{Bundles}.
-  \item Highcharts.\\
+  \item \textbf{Highcharts.}\\
  	Pour un rendu simple et clair des données nous avons eu recours à Highcharts qui est une bibliothèque Javascript spécialisée dans la représentation graphique. Ayant la possibilité de consommer du JSON et d'exporter des schémas sous format PDF ou même en image, cette bibliothèque a pris le dessus sur tous ses concurrents, e.g. Charts js ou encore D3js qui n'assurent pas l'exportation des données \cite{Highcharts}.
-  \item Twitter Bootstrap.\\
+  \item \textbf{Twitter Bootstrap.}\\
  	Nous avons utilisé ce Framework CSS afin de garantir des vues conviviales et homogènes. En effet, il propose une collection d'outils HTML et des extensions Javascript permettant le développement des sites et des applications web. Ses principaux avantage sont :
  \begin{itemize}
    \item La réactivité ( responsive ) : les vues crées s'adaptent automatiquement avec différents types d'écran, même les écrans des appareils mobiles.
    \item La facilité et la rapidité du développement : Bootstraps offre des blocs html, css et js tout prêts dont le seul but est d'éviter de tout coder à partir de zéro, e.g. des formulaires, des barres de navigation, des boutons \cite{Bootstrap}.
  \end{itemize}
  Enfin, Twitter Bootstrap s'est doté d'une grande communauté très active, le projet est partagé sur github et il est continuellement mis à jour selon les nouveautés du monde du web \cite{BootstrapGit}.
-  \item jQuery UI.\\
+  \item \textbf{jQuery UI.}\\
 	C'est une collection de widgets, des interfaces utilisateur graphique (GUI) élégantes permettant de développer des applications web hautement interactives. Ces composants sont mis en place avec jQuery (librairie Javascript), html et css.
 Une implémentation facile et rapide, c'est le but ultime de la bibliothèque jQuery, en effet, en l'utilisant nous gagnons un nombre très important de lignes de codes avec une meilleure lisibilité.
 Grâce à sa communauté très active, il est maintenu à jour pour rester parmi les leaders dans le développement web, chaque jour de nouvelles APIs et plugins sont injectées offrant une grande diversité de choix \cite{JqueryUi}.
-  \item AJAX (Asynchronous JavaScript and XML).\\
+  \item \textbf{AJAX (Asynchronous JavaScript and XML).}\\
 	Cette technologie basée principalement sur du javascript est la combinaison de plusieurs langages (e.g., CSS, JSON, XML, XMLHttpRttprequest) afin d'effectuer des traitements complexes sur les vues sans recharger la totalité de la page, autrement dit, sans que l'utilisateur ne s'en aperçoive.
 En outre, Il permet d'avoir des applications plus réactives et d'implémenter de nouvelle fonctionnalités avec une présentation moderne tout en diminuant le temps de latence.
 AJAX a été notre choix devant plusieurs autres Framework offrant le service single-page comme l'AngularJS \cite{AngularJs}, parce qu'il est integré par défaut au SF2 et est facile à mettre en place.
@@ -102,7 +102,7 @@ La diversité de ces technologies nous a imposé une cartographie présentée par la
 \section{Présentation de l'application}
 Dans cette Dernière partie, nous allons présenter à travers quelques captures d'écran, les principales fonctionnalités de notre application.
 \begin{itemize}
-  \item Authentification
+  \item[\ding{108}] Authentification.\\
   Cette interface est le point d'entrée de notre application. Pour s'authentifier, il existe deux moyens, soit à travers un nom d'utilisateur et un mot de passe, soit à travers une adresse mail.
   La figure \ref{loginImg} illustre l'interface d'authentification.
 
@@ -124,7 +124,7 @@ Afin d'implémenter cette phase, nous avons procédé à la sécurisation des URLs.
 \label{menuImg}
 \end{figure}
 
-  \item Interface d'accueil. \\
+  \item[\ding{108}] Interface d'accueil. \\
   C'est l'interface principale de notre application, elle se présente sous la forme d'une file d'actualités composée de plusieurs éléments simples et faciles à utiliser.
 En mettant en place des icônes fréquement utilisées dans les réseaux sociaux et dans les applications web ainsi que des interfaces ludiques avec des emplacement bien spécifique, nous rendons les vues plus manipulables pour un débutant permettant de s'y habitué rapidement.La figure \ref{accueilImg} représente notre écran d'accueil.
 
@@ -177,7 +177,7 @@ La demande est émise dans la file d'actualité comme introduit par la Figure \ref
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.6]{demandeEmise.png}
-\caption{Demande émise}
+\caption{~Demande émise}
 \label{demEmisImg}
 \end{figure}
 
@@ -187,39 +187,39 @@ Dans la Figure \ref{demEtCommImg} nous illustrons une demande après plusieurs tr
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.6]{accueilCommentaire.png}
-\caption{Demande après traitement}
+\caption{~Demande après traitement}
 \label{demEtCommImg}
 \end{figure}
 
-  \item Interface écran commun. \\
+  \item[\ding{108}] Interface écran commun. \\
   Elle est illustré par la figure \ref{ecranImg}.C'est une interface affichée dans un grand écran devant tous les collaborateurs. Elle donne des informations spécifiques afin d'aider dans le suivi des demandes comme l'arrivée d'un nouveau commentaire ou l'affectation d'un nouveau fichier.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.6]{ecranCommun.png}
-\caption{Interface écran commun}
+\caption{~Interface écran commun}
 \label{ecranImg}
 \end{figure}
 
 Cette interface permet à l'administrateur de créer une nouvelle demande ainsi que d'exporter la liste de toutes les demandes dans le système.
 
-  \item Administration des utilisateurs. \\
+  \item[\ding{108}] Administration des utilisateurs. \\
   Elle permet à l'administrateur toutes les manipulations sur les utilisateurs comme la mise à jour, l'activation ou l'affectation d'un nouveau rôle. Elle est représenté par la figure \ref{userAdmImg}.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.6]{adminUsers.png}
-\caption{Interface administration des utilisateurs}
+\caption{~Interface administration des utilisateurs}
 \label{userAdmImg}
 \end{figure}  
  
-\item Administration des demandes. \\
+\item[\ding{108}] Administration des demandes. \\
 Elle garantit l'accès direct aux données des demandes afin de les modifier à volonté ou les exporter sous plusieurs formats i.e. json, xml, csv.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.6]{adminDemande.png}
-\caption{Interface administration des demandes}
+\caption{~Interface administration des demandes}
 \label{demAdmImg}
 \end{figure} 
 

@@ -23,9 +23,7 @@
 \subsection{L'entreprise "UrbaProd"}
 UrbaProd est une société de conseil en organisation par l'espace spécialisée dans le secteur d'aménagement des espaces de travail.
 Filiale de la société mère Génie des Lieux, depuis 2010, UrbaProd  participe à l'aménagement et le réaménagement des espaces de travail pour des grands comptes répartis essentiellement en France.
-UrbaProd est composée essentiellement de deux pôles : le pôle "3D"  et le pôle "space planning". Nous illustrons dans la figure \ref{organigrammeImg} l'organigramme d'UrbaProd.  Notre projet  a été effectué au sein du pôle  "IT" qui est nouvellement créé afin de mettre en place une solution de gestion de production Offshore.
-\section{Problématique}
-Aujourd'hui, nous avons de plus en plus de demandes à traiter, sans avoir un support informatique pour les gérer. Ce n'est pas très aisé de gérer l'historique de la clientéle d'une entreprise. De plus, lors des différentes intéractions avec la clientéle, et en particulier lors du partage d'informations, l'outils utilisé est le mail. Cependant, cela vire au désordre, i.e. messages dissparus, méthodes de classements qui différent d'un collaborateur à un autre, absence de suivi. Et comme la relation entre collaborateurs est la priorité stratégique de la société, ce point est à travailler d'urgence.
+"UrbaProd" est composée essentiellement de deux pôles : le pôle "3D"  et le pôle "space planning". Nous illustrons dans la figure \ref{organigrammeImg} l'organigramme d'UrbaProd.  Notre projet  a été effectué au sein du pôle  "IT" qui est nouvellement créé afin de mettre en place une solution de gestion de production Offshore.
 
 \begin{figure}[!ht]
 \centering
@@ -58,6 +56,9 @@ UrbaProd travaille et accompagne les processus d'aménagements des grands comptes
 \label{refenrenceImg}
 \end{figure}
 
+\section{Problématique}
+Aujourd'hui, nous avons de plus en plus de demandes à traiter, sans avoir un support informatique pour les gérer. Ce n'est pas très aisé de gérer l'historique de la clientéle d'une entreprise. De plus, lors des différentes intéractions avec la clientéle, et en particulier lors du partage d'informations, l'outils utilisé est le mail. Cependant, cela vire au désordre, i.e. messages dissparus, méthodes de classements qui différent d'un collaborateur à un autre, absence de suivi. Et comme la relation entre collaborateurs est la priorité stratégique de la société, ce point est à travailler d'urgence.
+
 \section{Solutions existantes}
 Il existe plusieurs solutions de gestion de relation client sur le marché. En examinant ces applications, nous citons les plus importantes :
 \subsection{Version éditeur}
@@ -66,7 +67,7 @@ Il existe plusieurs solutions de gestion de relation client sur le marché. En ex
 \item[\ding{108}]
 CRM de Fitnet Manager : Fitnet Avant-vente est l'outil de gestion commerciale de Fitnet Manager. Les solutions CRM et ERP existent côtes à côtes. Activées ensemble, elles fonctionnent de manière entièrement intégrée. Fitnet Manager couvre ainsi l'ensemble du cycle de vie de l'activité : depuis la prospection jusqu'à la facturation et l'analyse dans les reporting \cite{Fitnet}.
 
-  \item
+  \item[\ding{108}]
   Everwin CXM : c'est une solution qui vise les cabinets d'architectures, elle couvre plusieurs fonctionnalités citant à titre d'exemple :
   \begin{itemize}
     \item
@@ -88,14 +89,13 @@ il est disponible en mode SaaS ou licence et peut être couplé aux ERP ERPEverwin
 \end{figure}
 
 \subsection{Version libre}
-\begin{itemize}
-  \item Dolibar ERP/CRM : cette solution gère les activités professionnelles ou associatives de point de vue contact, commandes, stock. Elle gère aussi la gestion des projets et les avancements de leurs tâches, et assure même la gestion de la ressource humaine.
+ Dolibar ERP/CRM : cette solution gère les activités professionnelles ou associatives de point de vue contact, commandes, stock. Elle gère aussi la gestion des projets et les avancements de leurs tâches, et assure même la gestion de la ressource humaine.
 	Dolibarr est disponible pour toute plate-forme puisqu'elle est développée en PHP, MySQL ou encore PostgreSQL .
 La figure \ref{dolibarr1Img} illustre l'architecture sur laquelle est basée la solution Dolibarr :
 
 \begin{figure}[!ht]\centering
 \includegraphics[scale=0.4]{Dolibarr1.png}
-\caption{architecture Dolibarr \cite{Dolibarr} }
+\caption{Architecture Dolibarr \cite{Dolibarr} }
 \label{dolibarr1Img}
 \end{figure}
 
@@ -108,7 +108,6 @@ La figure \ref{dolibarr2Img} présente l'écran d'accueil de Dolibarr :
 \label{dolibarr2Img}
 \end{figure}
 
-\end{itemize}
 \subsection{Etude comparative}
 Le tableau \ref{compSolExt} présente un comparatif entre les solutions existantes présentées précédemment :
 
@@ -131,7 +130,7 @@ Le tableau \ref{compSolExt} présente un comparatif entre les solutions existante
 
 Les applications étudiées, qu'elles soient en versions éditeurs ou même gratuites, et malgré leurs adaptabilités et la diversité de leurs fonctionnalités offertes, restent incapable de satisfaire les exigences de la société. En effet, elles n'intègrent pas un système de commentaire et leur manipulation reste plutôt complexe comparée à la solution à laquelle nous voulons aboutir.
 
-\section{Objectif du projet}
+\section{Objectifs du projet}
 Nous voulons offrir un meilleur service dans nos réponses aux collaborateurs à l'aide d'un véritable outil de gestion des demandes. Aujourd'hui nous visons de :
 \begin{itemize}
   \item Faciliter la gestion des demandes.

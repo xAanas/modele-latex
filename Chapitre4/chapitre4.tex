@@ -28,15 +28,15 @@ Cette section met l'accent sur les logiciels utilisés durant ce travail. Puis no
 \subsection{Environnements de travail}
 Les principaux logiciels utilisés sont :
 \begin{itemize}
-  \item Netbeans 8.0.2 : c'est un environnement de développement intégré (IDE)  qui supporte plusieurs langage e.g., php, java, c.
+  \item \textbf{Netbeans 8.0.2} : c'est un environnement de développement intégré (IDE)  qui supporte plusieurs langages e.g., php, java, c.
 C'est un produit oracle qui est maintenu à jour pour supporter les
-derniers technologies et framework les plus utilisés \cite{Netbeans}.
-  \item Microsoft Office : World 2013 pour la rédaction du cahier de charge et Excel 2013 pour l'exportation des différents informations dans notre application.
-  \item Adobe Photoshop CS6 : utilisé pour le traitement des images utilisées tout le long du stage que ce soit dans le rapport, élaboration du cahier de charge ou le développement de l'application.
-  \item WampServer 2.5 : pour la simulation locale du serveur web, nous avons choisi ce serveur pour la facilité du partage des données dans un serveur local ou à distance c'est à dire pour des utilisateurs de l'extérieur de notre réseau.
-  \item Mozilla Firefox, Google Chrome : nous avons effectué le test des vues dans ces navigateurs sur un écran pc 23 pouces et sur une tablette Galaxy Tab 4 de Samsung pour une qualité optimale.
-  \item Git et Github : afin de garder un trace de notre travail, d'avoir la possibilité d'un retour en arrière en cas de problème, nous avons utilisé l'outil de versionning Git qui offre la possibilité de sauvegarder notre travail avec un simple "commit" et permet même d'effectuer des sauvegardes en ligne avec le "push".
-La figure \ref{commitImg} et \ref{contributionImg} présentent l'interface du Github avec quelques "commit" et toutes les contributions effectuées pendant notre travail.
+dernières technologies et framework les plus utilisés \cite{Netbeans}.
+  \item \textbf{Microsoft Office} : World 2013 pour la rédaction du cahier de charge et Excel 2013 pour l'exportation des différents informations dans notre application.
+  \item \textbf{Adobe Photoshop CS6} : utilisé pour le traitement des images utilisées tout le long du stage que ce soit dans le rapport, élaboration du cahier de charge ou le développement de l'application.
+  \item \textbf{WampServer 2.5} : pour la simulation locale du serveur web, nous avons choisi ce serveur pour la facilité du partage des données dans un serveur local ou à distance c'est à dire pour des utilisateurs situés à l'extérieur de notre réseau.
+  \item \textbf{Mozilla Firefox, Google Chrome} : nous avons effectué le test des vues dans ces navigateurs sur un écran pc 23 pouces et sur une tablette Galaxy Tab 4 de Samsung pour une bonne qualité de rendu.
+  \item \textbf{Git et Github} : afin de garder un trace de notre travail, d'avoir la possibilité d'un retour en arrière en cas de problème, nous avons utilisé l'outil de versionning Git qui offre la possibilité de sauvegarder notre travail avec un simple "commit" et permet même d'effectuer des sauvegardes en ligne avec le "push".
+La figure \ref{commitImg} et \ref{contributionImg} présentent l'interface de Github avec quelques "commit" et toutes les contributions effectuées pendant notre travail.
 
 \begin{figure}[!ht]
 \centering
@@ -61,7 +61,7 @@ Durant notre travail, plusieurs choix technique ont été faits. Dans ce qui suit,
   \item \textbf{Le Framework Symfony2.}\\
 	Une exigence du client dès le début du projet, était de travailler avec le langage PHP sur une base de données MySQL.
 L'idée du client était de travailler avec du PHP natif étant donnée qu'un Framework n'est pas indispensable pour le développement d'une application Web mais après l'élaboration du cahier de charge et vue le volume du travail demandé et la nature des fonctionnalités, il serait impossible de terminer le projet dans les délais. Le recourt à un Framework PHP devient indispensable. Ses bénéfices ne se limitent pas au gain énorme du temps que nous aurions mais aussi de la structuration du projet. Nous aurons un cadre de travail conforme au règles du métier qui nous fournira un code maintenable, évolutif et des librairies réutilisables facilitant plusieurs tâches.
-Il nous permet donc d'éviter les anti-pattern comme don't repeat yourself (DIE), qui consiste à ne pas réinventer la roue et mettre en oeuvre des composants existants.
+Il nous permet donc d'éviter les anti-pattern comme don't repeat yourself (DRY), qui consiste à ne pas réinventer la roue et mettre en oeuvre des composants existants.
 Parmi les Framework gratuits sur le marché nous avons identifié les trois les plus utilisées et qui sont Laravel, Zend2 (ZF2) et Symfony2 (SF2).
 Vue que Laravel est encore nouveau et immature, le choix s'est limité entre ZF2 et SF2.
 Ces deux Framework sont matures et stables. Ils adaptent une architecture similaire, la seule différence frappante entre ses deux leaders est la richesse de la documentation qui a joué en faveur du SF2 et surtout sa communauté très active \cite{Sf2vsZf2}.
@@ -70,7 +70,7 @@ D'autre part, SF2 est doté de plusieurs outils tels que Doctrine2 qui est l'ORM 
   \item \textbf{Composer.}\\
 	C'est le gestionnaire de dépendance dédié au PHP. Il facilite l'import des bundles afin de les réutiliser et permet également de maintenir notre application à jour à travers un simple update (semblable au MAVEN pour le langage Java).
   \item \textbf{Bundles.}\\
-	Ce sont des modules développés par la communauté Symfony pour éviter de réinventer la roue. En effet, leur intégration est facile grâce au Composer qu'on vient de définir dans le paragraphe précédant et permettent de gagner énormément de temps \cite{Bundles}.
+	Ce sont des modules développés par la communauté Symfony pour éviter de réinventer la roue. En effet, leur intégration est facile grâce au Composer que nous venons de définir dans le paragraphe précédant et permettent de gagner énormément de temps \cite{Bundles}.
   \item \textbf{Highcharts.}\\
  	Pour un rendu simple et clair des données nous avons eu recours à Highcharts qui est une bibliothèque Javascript spécialisée dans la représentation graphique. Ayant la possibilité de consommer du JSON et d'exporter des schémas sous format PDF ou même en image, cette bibliothèque a pris le dessus sur tous ses concurrents, e.g. Charts js ou encore D3js qui n'assurent pas l'exportation des données \cite{Highcharts}.
   \item \textbf{Twitter Bootstrap.}\\
@@ -102,7 +102,7 @@ La diversité de ces technologies nous a imposé une cartographie présentée par la
 \section{Présentation de l'application}
 Dans cette Dernière partie, nous allons présenter à travers quelques captures d'écran, les principales fonctionnalités de notre application.
 \begin{itemize}
-  \item[\ding{108}] Authentification.\\
+  \item[\ding{108}] \textbf{Authentification}\\
   Cette interface est le point d'entrée de notre application. Pour s'authentifier, il existe deux moyens, soit à travers un nom d'utilisateur et un mot de passe, soit à travers une adresse mail.
   La figure \ref{loginImg} illustre l'interface d'authentification.
 
@@ -124,7 +124,7 @@ Afin d'implémenter cette phase, nous avons procédé à la sécurisation des URLs.
 \label{menuImg}
 \end{figure}
 
-  \item[\ding{108}] Interface d'accueil. \\
+  \item[\ding{108}] \textbf{Interface d'accueil} \\
   C'est l'interface principale de notre application, elle se présente sous la forme d'une file d'actualités composée de plusieurs éléments simples et faciles à utiliser.
 En mettant en place des icônes fréquement utilisées dans les réseaux sociaux et dans les applications web ainsi que des interfaces ludiques avec des emplacement bien spécifique, nous rendons les vues plus manipulables pour un débutant permettant de s'y habitué rapidement.La figure \ref{accueilImg} représente notre écran d'accueil.
 
@@ -139,7 +139,7 @@ Par exemple, pour changer l'état de la demande, il suffit d'appuier sur l'état a
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[scale=0.7]{accueil.png}
+\includegraphics[scale=0.7]{changerEtatTotal.png}
 \caption{Changer l'état d'une demande}
 \label{changerEtatImg}
 \end{figure}
@@ -191,7 +191,7 @@ Dans la Figure \ref{demEtCommImg} nous illustrons une demande après plusieurs tr
 \label{demEtCommImg}
 \end{figure}
 
-  \item[\ding{108}] Interface écran commun. \\
+  \item[\ding{108}] \textbf{Interface écran commun} \\
   Elle est illustré par la figure \ref{ecranImg}.C'est une interface affichée dans un grand écran devant tous les collaborateurs. Elle donne des informations spécifiques afin d'aider dans le suivi des demandes comme l'arrivée d'un nouveau commentaire ou l'affectation d'un nouveau fichier.
 
 \begin{figure}[!ht]
@@ -203,7 +203,7 @@ Dans la Figure \ref{demEtCommImg} nous illustrons une demande après plusieurs tr
 
 Cette interface permet à l'administrateur de créer une nouvelle demande ainsi que d'exporter la liste de toutes les demandes dans le système.
 
-  \item[\ding{108}] Administration des utilisateurs. \\
+  \item[\ding{108}] \textbf{Administration des utilisateurs} \\
   Elle permet à l'administrateur toutes les manipulations sur les utilisateurs comme la mise à jour, l'activation ou l'affectation d'un nouveau rôle. Elle est représenté par la figure \ref{userAdmImg}.
 
 \begin{figure}[!ht]
@@ -213,7 +213,7 @@ Cette interface permet à l'administrateur de créer une nouvelle demande ainsi qu
 \label{userAdmImg}
 \end{figure}  
  
-\item[\ding{108}] Administration des demandes. \\
+\item[\ding{108}] \textbf{Administration des demandes} \\
 Elle garantit l'accès direct aux données des demandes afin de les modifier à volonté ou les exporter sous plusieurs formats i.e. json, xml, csv.
 
 \begin{figure}[!ht]

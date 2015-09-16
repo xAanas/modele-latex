@@ -1,13 +1,14 @@
 \backcite {Everwin}{{v}{(document)}{Doc-Start}}
 \backcite {Dolibarr}{{v}{(document)}{Doc-Start}}
 \backcite {Dolibarr}{{v}{(document)}{Doc-Start}}
-\backcite {Latex}{{1}{(document)}{Doc-Start}}
+\backcite {UML}{{1}{(document)}{Doc-Start}}
 \backcite {Fitnet}{{5}{3.1}{subsection.1.3.1}}
 \backcite {Everwin}{{5}{3.1}{subsection.1.3.1}}
 \backcite {Everwin}{{5}{I.3}{figure.caption.4}}
 \backcite {Dolibarr}{{6}{I.4}{figure.caption.5}}
 \backcite {Dolibarr}{{6}{3.2}{figure.caption.5}}
 \backcite {Dolibarr}{{7}{I.5}{figure.caption.6}}
+\backcite {AgManifesto}{{8}{5}{section.1.5}}
 \backcite {RUP}{{8}{5}{section.1.5}}
 \backcite {XP}{{8}{5}{section.1.5}}
 \backcite {SCRUM}{{8}{5}{section.1.5}}
@@ -16,6 +17,7 @@
 \backcite {SCRUM}{{9}{5.2}{subsection.1.5.2}}
 \backcite {IHM}{{13}{3.3}{subsection.2.3.3}}
 \backcite {SCRUM}{{13}{3.4.2}{subsubsection.2.3.4.2}}
+\backcite {Dbal}{{21}{2}{figure.caption.17}}
 \backcite {Package}{{25}{4.1}{subsection.3.4.1}}
 \backcite {MVC}{{25}{4.1}{figure.caption.27}}
 \backcite {Netbeans}{{39}{1.1}{subsection.4.1.1}}
